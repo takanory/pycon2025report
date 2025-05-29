@@ -2,7 +2,10 @@
 
 ## Lightning Talk
 
+* ビデオ：<https://www.youtube.com/watch?v=lXngPPRaqGg>
+
 ## Keynote: The Marshall Project
+
 
 * https://us.pycon.org/2025/about/keynote-speakers/#the-marshal-project
 * https://www.themarshallproject.org/
@@ -22,6 +25,7 @@
 
 ## Reinventing the Wheel: A Community-Driven Roadmap for Python Packaging
 
+* ビデオ：<https://www.youtube.com/watch?v=1Oki8vAWb1Q>
 * https://us.pycon.org/2025/schedule/presentation/100/
 * Jonathan Dekhtiar, Barry Warsaw 
 * WheelNext
@@ -33,6 +37,7 @@
 ## Phantom Dependencies: is your requirements.txt haunted? - PyCon US 2025
 
 * https://us.pycon.org/2025/schedule/presentation/14/
+* ビデオ：<https://www.youtube.com/watch?v=x9K3xPmi_tg>
 * Seth Michael Larson
 * SBOMがでペン伝シーに対応するの?
 * PEP 770 でSBOMはいる。Apr 11 にAcceptされた
