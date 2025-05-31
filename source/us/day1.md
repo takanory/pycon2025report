@@ -73,10 +73,23 @@ Deb Nicholson氏
 * ビデオ：<https://www.youtube.com/watch?v=ydVmzg_SJLw>
 * <https://p2ptk.org/monopoly/5369>
 
+```{figure} images/cory.jpg
+:width: 400
+
+Cory Doctorow氏
+```
+
 ## How to learn Japanese with Python
 
 * スピーカー：Takanori Suzuki
 * ビデオ：<https://www.youtube.com/watch?v=3wQxP-GfT-A>
+* スライド：<https://slides.takanory.net/slides/20250516pyconus/>
+
+```{figure} images/takanory.jpg
+:width: 400
+
+筆者の発表の様子
+```
 
 ## 503 days working full-time on FOSS: lessons learned
 
@@ -86,4 +99,41 @@ Deb Nicholson氏
 * issue template
 * give first reply quickly
 * 4つのポイントを常に考える
+
+## Duolingoのパーティー
+
+この日は企業主催のパーティーがいくつかありました。
+筆者が把握している範囲だと[Duolingo](https://ja.duolingo.com/)、[MongoDB](https://www.mongodb.com/)、[Astral](https://astral.sh/)のパーティーがあったようですが、Duolingoのパーティーに申し込んで参加しました。
+Duolingoの本社はピッツバーグにあり、今回初めてPyCon USにスポンサーし、その本社オフィスでパーティーが開催されました。
+会場からは少し距離があるため、用意してくれたバスに乗って移動です（手厚い！）。
+
+地元っぽいフードとビールを飲んで参加者同士の交流です。
+私が座った席には、なんと3日目のキーノートスピーカーであるKari L. Jordan博士が座っていました。びっくり。
+
+パーティーの案内メールに「スペシャルグッズがおみやげにあるよ」と書いてあって期待して行ったんですが、内容はパイントグラス、クージー（ドリンクの保冷カバー）、グミでした。
+これ以上パイントグラスが増えても困るんですが、とはいえduolingoロゴのグラスは超レアなのでもらってきました。ありがとうございます！
+
+```{figure} images/duolingo-swags.jpg
+:width: 200
+
+Duolingoスペシャルグッズ
+```
+
+パーティーの中盤にはDuolingoのマスコットキャラクターであるDuoの着ぐるみが登場しました。
+みんな列にならんで記念撮影大会です。
+これはこのパーティーに来ないとできない経験だったので、めちゃめちゃテンション上がりました！！
+
+```{figure} images/with-duo.jpg
+:width: 200
+
+Duoと記念撮影
+```
+
+パーティーが終わった後はMongoDBパーティーに参加したけど、人が多すぎてご飯にありつけなかったメンバーと合流してビールを飲みました（Duolingoパーティーのビールは普通だった）。
+
+```{figure} images/beer-day1.jpg
+:width: 400
+
+日本メンバーと合流
+```
 
