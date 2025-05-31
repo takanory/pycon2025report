@@ -13,7 +13,7 @@ author = 'takanory'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser"]
+extensions = ["myst_parser", "sphinx_comments"]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -25,3 +25,7 @@ exclude_patterns = []
 
 html_theme = 'furo'
 html_static_path = ['_static']
+
+comments_config = {
+   "hypothesis": True
+}
