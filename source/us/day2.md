@@ -56,3 +56,67 @@
 
 
 ````
+
+
+````{admonition} PyCon での PSFメンバーランチについて
+
+一般社団法人PyCon JP Association理事の吉田（[@koedoyoshida](https://twitter.com/koedoyoshida/)）です。
+このコラムではPSFメンバーランチについて紹介します。
+
+PSFメンバーランチとは、PyCon US中のどこか一日カンファレンスランチの時間帯で、Python Software Foundation（PSF）のさまざまな地域のメンバーが集まってランチするサブイベントです。
+
+例年ここではランチを取りながら、PSFのスタッフとボードメンバーから昨年の活動や会計に関する報告がされ、他のPSFメンバーと交流します。今年もPython生みの親のGuido van Rossum氏が参加していました。
+今年も主にPSFのExecutive DirectorであるDeb Nicholson氏から説明がありました。
+
+活動や会計報告と言うだけでは無味乾燥に思われるかも知れませんが、今年もプレゼンテーションに加え、フルカラーで30ページ弱の報告資料冊子が用意されており、大変分かりやすくなっていました。
+
+```{figure} images/psfbooklet1.jpg
+:width: 400
+
+PSFの活動報告の冊子
+```
+
+この冊子にはPyCon JP 2024で撮影された写真が使われており、見知ったメンバーや発表者の方々が掲載されていたことは意外な驚きと嬉しさがありました。この写真はPyCon USのオープニングでも短時間ですが、使われていました。これも大変嬉しかったです。
+
+```{figure} images/psfbooklet2.jpg
+:width: 400
+
+PyCon JP 2024で撮影された写真のあるページ
+```
+
+PyCon JP で撮影された写真についてはクリエイティブコモンズライセンスで公開しています。
+* [PyCon JP Association ライセンスについて](https://www.pycon.jp/committee/license.html)
+
+
+本題の会計報告についです。
+PSFの収入の主要な物としては、年間スポンサーおよびPyCon USなどのイベントの参加者収入となります。また、主な支出としてはPyCon USの開催費用や遠方などからの参加者に対する費用の援助であるTravel Grant、スタッフ人件費、またPython開発者の保険料の支払いなどがあります。今年の報告および報告資料を読んで大きく変化のあった点は資産状況(Growrh of Assets)の変化とその原因です。昨年の全体資産から今年の全体資産でおよそ$5,454->$4,256と$1000前後、2割近く落ちていました。(単位 $ in thousands)。今年の資料だけではその原因は分かりにくいのですが、昨年のPSFメンバーランチで配られた活動報告冊子の同様の資料について、私の手持ちで記録を残していたので、その場でそれと比較したところ、その原因となっていると思われる大きな支出(Program Service Expenses)の変化としてPackaging Work Group/Infrastructure/Otherの支出が相当して$1000程度相当増加しているように見えました。
+
+```{figure} images/psfbooklet3.jpg
+:width: 400
+
+今年の冊子のGrowrh of AssetsおよびProgram Service Expensesのなどのページ
+```
+
+こちらについて、吉田でその場で質問して再確認したところ、今年の報告資料にもあるPSF PyPI Safety & Securityの活動に大きく費用がかかっているとのことでした。これについては今回は特に重点的に投資しているとのことでした。
+
+```{figure} images/psfbooklet4.jpg
+:width: 400
+
+PSF PyPI Safety & Security
+```
+
+PyPIのセキュリティを保つための活動については後日のKeynoteでも取り上げられており、PSFがこの部分に注力している事が良く分かりました。
+
+PSFメンバーランチはPSFのメンバーであれば、PyCon USの開催の少し前に登録案内が来て、それに登録すれば、無料で参加することができます。
+
+PSFメンバーランチはその場で質問なども出来る貴重な機会です。
+また、例年の冊子や資料と比較することで寄り深く状況を把握することができます。
+
+PSFのメンバーにはいくつかの種類があります。私は投票権のあるマネージングメンバー(Managing Members)として登録しています。
+マネージングメンバーになるには、月に5時間程度PythonやPyConについて継続して活動している必要があります。
+PSFメンバーを通じて、ボードメンバーの投票などPSFの活動に関わることが出来ます。
+条件を満たしている方、また興味のある方は下記のページから詳細を確認してみてはいかがでしょうか？
+
+* [Become a Member of the PSF](https://www.python.org/psf/membership/)
+
+````
