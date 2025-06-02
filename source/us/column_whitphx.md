@@ -56,7 +56,9 @@ CPythonリポジトリではこういう場で初心者が取り組みやすいi
 * 数年経っているようなissueは除くようにアドバイスを受けました。長く残っているということは解決が難しい可能性が高いからです。
 * コメント数が多いissueはすでに誰かが取り組んでいる可能性が高いので、今回の目的からは除外します。同様にassigneeがいるissueも当然除外します。 -->
 
-<!-- TODO: 上記の短縮版を書く -->
+スプリントに参加すると、まず取り組むissueを決めます。
+CPythonリポジトリでは初心者が取り組みやすい簡単なissueに [`easy` label](https://github.com/python/cpython/issues?q=is:issue%20state:open%20label:easy)がついていて、ここから探すのが一般的です。
+しかし今回は `easy` のissueの数が参加者数に対して全然足りておらず、空いているissueすぐに無くなってしまったため、他のissueから探しました。
 
 その結果 https://github.com/python/cpython/issues/127960 を見つけました。新しいREPLでは相対インポートの挙動が従来のREPLと違っているという指摘です。
 自分の手元で最新のコミットでも問題を再現できることを確認し、修正点のアテをつけてから issue に自分がスプリントで取り組みたい旨の[コメント](https://github.com/python/cpython/issues/127960#issuecomment-2891721324)を残しました。
