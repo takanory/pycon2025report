@@ -17,7 +17,7 @@ Template(strings=('<div>', '</div>'), interpolations=(Interpolation('</div><scri
 ```
 
 この挙動により、ユーザー入力の即時評価リスクを排除できます。
-スプリントでは、t-stringsの動作を体験できる https://t-strings.help/ サイトの手順をなぞり、ドキュメントやサイトの改善に協力しました（ [PR#18](https://github.com/t-strings/tdom/pull/18)、[PR#19](https://github.com/t-strings/tdom/pull/19)、[PR#19](https://github.com/t-strings/help/pull/19)）。
+スプリントでは、t-stringsの動作を体験できる <https://t-strings.help/> サイトの手順をなぞり、ドキュメントやサイトの改善に協力しました（ [PR#18](https://github.com/t-strings/tdom/pull/18)、[PR#19](https://github.com/t-strings/tdom/pull/19)、[PR#19](https://github.com/t-strings/help/pull/19)）。
 
 このサイトで紹介している [tdom](https://github.com/t-strings/tdom)ライブラリは、Templateオブジェクトを安全に文字列に変換する処理を担当しています。これによって、例えば以下の様に書けるようになります。
 
