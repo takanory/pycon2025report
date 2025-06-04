@@ -10,7 +10,7 @@
 ## 参考リンク
 
 * MySTのmarkdownの書き方: [myst-parser](https://myst-parser.readthedocs.io/en/latest/)
-* (写真へのリンク)
+* [寺田撮影の写真へのリンク](https://www.dropbox.com/scl/fo/3dq6grg6rnw9pmgss56tv/ABf-PA6N0HzEr1aEvPu2xVc?rlkey=v32hborfitxbt88b2tw3ztkcn&e=1&dl=0)
 ```
 
 鈴木たかのり（[@takanory](https:/twitter.com/takanory)）です。

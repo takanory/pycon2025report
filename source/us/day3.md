@@ -1,4 +1,4 @@
-# Day 3
+# カンファレンス3日目
 
 ## Lightning Talk
 
@@ -19,9 +19,31 @@
 * 2FA対応
 * メールが生きているかチェック→ドメイン失って乗っ取られないように
 
-## Poster, Job Fair, Community session
+## ポスター、ジョブフェア、コミュニティーショーケース
 
-* Posterおもしろかった
+3日目の午前中はトークセッションはなく、ポスターセッションとジョブフェア、コミュニティーショーケースのみとなります。
+ポスターセッションはボードにA0程度のサイズのポスターを掲示し、その前でディスカッションなどを行う発表形式です。
+ジョブフェアは求人をしている企業がブースを出し、仕事を探している参加者が直接企業の担当者と会話ができるという場です。
+
+筆者もポスターセッションを見て回っていくつか質問やディスカッションをしてきました。
+「色のセオリー」についてのポスターでは、データ可視化ツールのより見やすい色についての発表がありました。
+各ツールのデフォルトの色はおすすめではないということで、ぜひ次に発表する機会があれば、おすすめのカラーテーマを教えて欲しい、もしくはテーマを作って共有してほしいという話をしました。
+
+```{figure} images/poster1.jpg
+:width: 400
+
+データ可視化の色のセオリーについてのポスター
+```
+
+CrossHairのポスターでは、コードを自動的に解析してテストをしてくれるライブラリ[CrossHair](https://github.com/pschanely/CrossHair)の紹介をしていました。
+PurePythonしか対象にできないため、制限があるという話でした。
+ただし、大きなプロダクトだったとしても、PurePythonで書かれている部分に絞って適用することは可能だそうです。
+
+```{figure} images/poster2.jpg
+:width: 400
+
+CrossHariのポスター
+```
 
 ## Reinventing the Wheel: A Community-Driven Roadmap for Python Packaging
 
@@ -50,7 +72,6 @@
 
 * https://us.pycon.org/2025/about/keynote-speakers/#dr-kari-l-jordan
 
-
 ## Python Steering Council
 
 * https://us.pycon.org/2025/about/keynote-speakers/#python-steering-council
@@ -59,17 +80,15 @@
 
 ## Python Software Foundation Update & Awards
 
-* PSF Board eceltion Aug/Sep
-* 2026はCalifornia
-* PyLadies Awards
-  * 50人ノミネート
-  * 3名が現地にいないのは残念。4名が受賞
-* Community Service Awards
-  * Iqbalさんが受賞
-* Distinguish Service Awards
-  * Thomas Wouters
-  * Van Lindberg
-  * Ewa Jodlowska
+PSFから最新の情報とアワードの表彰がありました。
+PSFの理事の選挙が8月か9月に開催されるとのことです。
+PyCon USの次の開催地はカリフォルニアの
+
+PyLadiesアワードでは50名がノミネートされ4名が受賞しました。
+ただ、そのうち3名は現地にいないのが残念でした。
+PSFのCommunity Service AwardsではPython Asia Organizationの創始者でもあるIqbalさんが受賞していました。
+Distinguish Service Awardsでは長年Pythonコミュニティで大きな貢献をしてきたThomas Wouters氏、Van Lindberg氏、Ewa Jodlowska氏が受賞していました。
+PSFのExecutive Directorを長年勤めていたEwa氏の受賞の時には、会場からひときわ大きな拍手が送られていました。
 
 ## Closing
 
