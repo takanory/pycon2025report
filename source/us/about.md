@@ -13,7 +13,7 @@ PyCon US 2025のイベント概要は以下の通りです。
 | | スプリント: 2023年5月19日（月）〜22日（木）|
 |場所|ペンシルバニア州、ピッツバーグ|
 |会場|[David L. Lawrence Convention Center](https://www.pittsburghcc.com/)|
-|参加費|個人：400 USD、企業：750 USD、学生：100 USD、オンライン：100 USD(TODO: 確認)|
+|参加費|個人：450 USD、企業：800 USD、学生：125 USD、ジョブフェアのみ：30 USD
 |主催|[Python Software Foundation(PSF)](https://www.python.org/psf-landing/)|
 
 ```{figure} images/pyconus2025.png
