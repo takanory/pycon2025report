@@ -135,10 +135,6 @@ PyCon USでフルのトークを現地で行うのは初めての経験です（
 * スピカー：Rodrigo Girão Serrão
 * <https://us.pycon.org/2025/schedule/presentation/164/>
 * ビデオ：<https://www.youtube.com/watch?v=iURLDirfmno>
-* contributing guide
-* issue template
-* give first reply quickly
-* 4つのポイントを常に考える
 
 このトークではRodrigo氏が503日間フルタイムのオープンソースの開発者として働いた経験を元に、自身がどのようなことを学んだかを紹介するトークです。
 現在はPythonの講師として活動しており、OSS開発者として働いていたのは過去の話だそうです。
