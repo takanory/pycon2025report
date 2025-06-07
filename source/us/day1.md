@@ -179,14 +179,19 @@ Rodrigo Girão Serrão氏
 
 [^mre]: [Minimal reproducible example - Wikipedia](https://en.wikipedia.org/wiki/Minimal_reproducible_example)
 
-```{admonition} PAOブース
+````{admonition} PAOブース
 このコラムはPython Asia Organizationの寺田([@terapyon](https://x.com/terapyon))がお届けします。
 
 [Python Asia Organization](https://pythonasia.org/)(略称: PAO)は、東アジアと東南アジアのPythonコミュニティを発展させるために2024年10月に立ち上がった法人です。
 昨年までは、任意の集まりとしてPyCon APACコミュニティーがPyCon USのブースを運営していました。
 今回からPAOが立ち上がったことでPyCon APACブースという名前からPAOブースという形でコミュニティーブースを出展しました。
 
-![PAOブース](images/pao-booth.jpg)
+```{figure} images/pao-booth.jpg
+:width: 400
+
+PAOブース
+```
+
 
 今回のPAOブースにはいくつかの目的はありました。
 
@@ -213,8 +218,12 @@ PyLadiesと同じ様に、PAOでも寄付を集めてTシャツを配布しま�
 ブースを担当すると、各国の方がと話ができることや、アジアに興味を持ってくれる参加者がブースに立ち寄ってくれる方が多いことを感じます。
 各国の話が聞けることや、コミュニティーメンバーの相互コミュニケーションが促進され、有意義な時間を過ごすことができました。
 
-![PAOブースのにぎわい](images/pao-booth-2.jpg)
+```{figure} images/pao-booth-2.jpg
+:width: 400
+
+PAOブースのにぎわい
 ```
+````
 
 ## Duolingoのパーティー
 
