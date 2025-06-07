@@ -10,6 +10,8 @@
 
 ## ライトニングトーク
 
+* ビデオ：<https://www.youtube.com/watch?v=47NJt_3ED_k>
+
 2日朝のライトニングトークからはEric Matthes氏による[django-simple-deploy](https://django-simple-deploy.readthedocs.io/en/latest/)を紹介します。
 django-simple-deployはDjangoのプロジェクトを各種プラットフォームに簡単にデプロイできるライブラリです。
 現在はFly.io、Platform.shとHerokuに対応しており、実際にデプロイするデモを行いながらトークを進め、今後さらに対応プラットフォームを増やしたいので協力して欲しいという話をしていました。
@@ -23,7 +25,7 @@ Eric Matthes氏によるライトニングトーク
 ## ダイバシティ&インクルージョンのパネル
 
 * ビデオ：<https://www.youtube.com/watch?v=SQAX4P59u8w>
-* https://us.pycon.org/2025/about/keynote-speakers/#diversity-and-inclusion-panel
+* <https://us.pycon.org/2025/about/keynote-speakers/#diversity-and-inclusion-panel>
 
 ダイバシティ&インクルージョン（D&I）のパネルディスカッションは、以下の5名により行われました
 （写真の左から右の順番です）。
@@ -67,7 +69,7 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 ## Keynote: Linn Root
 
 * ビデオ：<https://www.youtube.com/watch?v=Bglsof9b23k>
-* https://us.pycon.org/2025/about/keynote-speakers/#lynn-root
+* <https://us.pycon.org/2025/about/keynote-speakers/#lynn-root>
 
 ````{admonition} Type Hintsを「導入で終わらせない」ために
 このコラムは青野 高大([@koxudaxi](https://github.com/koxudaxi))がお届けします。
@@ -105,9 +107,9 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 
 ## Why `len('😶‍🌫️') == 4` and other weird things you should know about strings in Python 
 
-* https://us.pycon.org/2025/schedule/presentation/27/
 * ビデオ：<https://www.youtube.com/watch?v=np-xKVMIKcY>
-* https://github.com/MarieRoald/PyConUS25
+* スライド：<https://github.com/MarieRoald/PyConUS25/blob/main/PyConUS-2025-slides.pdf>
+* <https://us.pycon.org/2025/schedule/presentation/27/>
 
 ## ライトニングトークに申し込み
 
