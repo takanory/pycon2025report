@@ -71,6 +71,12 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 * ビデオ：<https://www.youtube.com/watch?v=Bglsof9b23k>
 * <https://us.pycon.org/2025/about/keynote-speakers/#lynn-root>
 
+```{figure} images/linn.jpg
+:width: 200px
+
+Linn Root氏
+```
+
 ````{admonition} Type Hintsを「導入で終わらせない」ために
 このコラムは青野 高大([@koxudaxi](https://github.com/koxudaxi))がお届けします。
 
@@ -107,17 +113,81 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 
 ## Why `len('😶‍🌫️') == 4` and other weird things you should know about strings in Python 
 
+* スピーカー：Marie Roald、Yngve Mardal Moe
 * ビデオ：<https://www.youtube.com/watch?v=np-xKVMIKcY>
 * スライド：<https://github.com/MarieRoald/PyConUS25/blob/main/PyConUS-2025-slides.pdf>
 * <https://us.pycon.org/2025/schedule/presentation/27/>
+
+このトークではPythonでは文字列をどのように扱っているか、またUnicodeの詳細についても触れていきます。
+最初に以下のようなコードがスライドが示されました。この段階で「え？なにがどうなってるの？」と思いながらトークがはじまります。
+うまいフリだなと思いました。
+
+```{code-block} python
+:caption: 冒頭で示されたコード例（このコードをコピペしてもうまく動きません、すいません）
+
+>>> "naïve" == "naïve"
+True
+>>> "naïve" == "naïve"
+False
+>>> int("৪")
+4
+```
+
+```{figure} images/why-len.jpg
+:width: 400px
+
+Yngve Mardal Moe氏（左）とMarie Roald氏
+```
+
+トークは文字列のエンコーディング、比較、スライスの3つのパートに分かれて進みます。
+Pythonは87種類の文字列のエンコーディング[^encoding]に対応しています。
+2バイトでは65536文字に対応していますが、Unicodeでは4バイトを使用して100万以上の文字に対応しています。
+同じ文字列でもエンコーディングによってサイズが変わります。
+
+[^encoding]: <https://docs.python.org/3.13/library/codecs.html#standard-encodings>
+
+またUnicodeの各文字にはカテゴリがあり、unicodedataモジュールの`category()`関数で取得できます。以下の`'Nd'`は十進数を意味します。
+
+```python
+>>> from unicodedata import category
+>>> category("৪")
+'Nd'
+```
+
+ここで冒頭に謎に迫るわけですが、この文字列を`int()`に変換するとなぜか4になります。
+`name()`関数で名前を取得すると「ベンガル文字の4」であることがわかります。
+
+
+```python
+>>> int("৪")
+4
+>>> from unicodedata import name
+>>> name("৪")
+'BENGALI DIGIT FOUR'
+```
+
+文字列の比較では、Pythonでは`"y" is "y"`とすると「`==`じゃないの？」と警告が出ますが、結果としてはTrueが返ります。
+これは時間とメモリの節約のために、Pythonではいくつかの文字を1度だけメモリ上に格納しているためです[^string_interning]。
+しかし全ての文字ではないため、文字列の比較では`==`を使いましょう。
+
+[^string_interning]: <https://github.com/python/cpython/blob/main/InternalDocs/string_interning.md>
+
+```python
+>>> "y" is "y"
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+True
+>>> "a" * 4097 is "a" * 4097
+False
+```
 
 ## ライトニングトークに申し込み
 
 ライトニングトークはカンファレンス中に4回（1日目夕、2日目朝、夕、3日目朝）開催されます。
 2日目夕方のライトニングトークに日本から来ていたshimizukawaさんとwhitphxさんが落ちた（10/58という狭き門）という話を聞いて、申し込みが電子化されたメリットでもありデメリットでもあるなと感じました。
-記念受験として出してみるかーと思い、3日目朝のライトニングトークに申し込みました。
+
+「記念受験として出してみるかー」と思い、3日目朝のライトニングトークに申し込みました。
 タイトルと簡単な概要文を書いて申し込みます。
-この時点で発表のアイデアはあるけどスライドはありません。
+この時点で発表のアイデアはありますがスライドはありません。
 するとフォーム締め切り後の16時頃にメールがあり、私のライトニングトークが当選しました！！
 明日の朝まで時間はあまりありませんが、ここからは集中して発表の準備を進めました。
 
@@ -150,9 +220,9 @@ Guidoさんパネルと巨大Pythonぬいぐるみ
 
 オークションで全ての商品が終わった後に会場から「ペン！！」という声があがりました。
 これは、商品を写すモニターに写り込んだペンをオークションしよう、という悪乗りです。
-ペンのオークションが始まり300ドルになった頃に「他にこの○○のステッカーを付けます」みたいにしていたら、色んな人がどんどん自分のコミュニティのステッカーを置き始めました。
+ペンのオークションが始まり300ドルになった頃に「他にこの○○のステッカーを付けます」みたいにMCがおまけを追加していたら、会場中の人がどんどん自分のコミュニティのステッカーを置き始めました。
 さらに悪乗りした人が現金を置いて、さらに各国の参加者がさまざまなお金を置き始めて、カオスな状態になりました。
-最終的にバッグが提供され、そのバッグに全てを入れてオークションは終わりました。
+最終的にバッグが提供され、そのバッグにペンと全てのグッズを入れて落札者に渡され、オークションは終わりました。
 
 ```{figure} images/auction3.jpg
 :width: 400
@@ -160,3 +230,4 @@ Guidoさんパネルと巨大Pythonぬいぐるみ
 ペンと雑多なグッズと現金
 ```
 
+こうしてカンファレンス2日目は21時40分くらいに終わりましたが、このあと私はライトニングトークの資料作成があるため、ホテルに戻った後に夜なべしてスライドを作成していました。
