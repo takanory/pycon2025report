@@ -68,7 +68,7 @@ Deb Nicholson氏
 「何千人のボランティア」を紹介するスライド
 ```
 
-## Keynote: Cory Doctorow
+## キーノート：Cory Doctorow
 
 * ビデオ：<https://www.youtube.com/watch?v=ydVmzg_SJLw>
 * <https://p2ptk.org/monopoly/5369>

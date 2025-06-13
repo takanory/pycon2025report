@@ -66,7 +66,7 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 
 [^smartphone]: [旅行が一瞬で台無しになる…海外紙が警告｢アメリカの空港で続く"スマホ検査"の異様な実態｣ ｢怪しい｣と思われただけでデータが抜き取られるケースも | PRESIDENT Online（プレジデントオンライン）](https://president.jp/articles/-/94921)
 
-## Keynote: Linn Root
+## キーノート：Linn Root
 
 * ビデオ：<https://www.youtube.com/watch?v=Bglsof9b23k>
 * <https://us.pycon.org/2025/about/keynote-speakers/#lynn-root>
@@ -137,7 +137,7 @@ PSFの収入の主要な物としては、年間スポンサーおよびPyCon US
 PSF PyPI Safety & Security
 ```
 
-PyPIのセキュリティを保つための活動については後日のKeynoteでも取り上げられており、PSFがこの部分に注力している事が良く分かりました。
+PyPIのセキュリティを保つための活動については後日のキーノートでも取り上げられており、PSFがこの部分に注力している事が良く分かりました。
 
 PSFメンバーランチは、PSFメンバーが事前登録のうえ参加できる貴重なイベントで、その場で質問も可能です。
 PSFメンバーになると、理事選挙の投票権なども得られます。月に5時間程度、PythonやPyConに継続的に関わっているなどの条件を満たせば、誰でもメンバー登録が可能です。該当する方や興味のある方は、ぜひ以下のページで詳細をご確認ください。
