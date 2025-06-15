@@ -5,14 +5,14 @@
 ```{figure} images/breakfast-day2.jpg
 :width: 400
 
-朝食のテーブル
+朝食の提供テーブル
 ```
 
 ## ライトニングトーク
 
 * ビデオ：<https://www.youtube.com/watch?v=47NJt_3ED_k>
 
-2日朝のライトニングトークからはEric Matthes氏による[django-simple-deploy](https://django-simple-deploy.readthedocs.io/en/latest/)を紹介します。
+2日目朝のライトニングトークからはEric Matthes氏による[django-simple-deploy](https://django-simple-deploy.readthedocs.io/en/latest/)を紹介します。
 django-simple-deployはDjangoのプロジェクトを各種プラットフォームに簡単にデプロイできるライブラリです。
 現在はFly.io、Platform.shとHerokuに対応しており、実際にデプロイするデモを行いながらトークを進め、今後さらに対応プラットフォームを増やしたいので協力して欲しいという話をしていました。
 
@@ -57,7 +57,7 @@ Cristián氏はベルリンからの参加だったため、やはり無事に�
 たしかにその考え方はエンジニア全般に通じるものがあるなと感じました。
 Jay氏は昨年、PyCon USに来たがホテルでクレジットカードが通らず保証金が支払えない知人がおり、すぐにホテルに向かって代わりに支払ったそうです。
 これは元々の知り合いじゃないとなかなかできないことですが、確かに現実で発生しそうなことだなと思いました。
-筆者も2024年のPyCon APACのホテルに着いたときに、保証金が現金のみと言われ、他のメンバーに現金を借りました（危ない）。
+筆者も2025年のPyCon APACでフィリピンのホテルに着いたときに、保証金が現金のみと言われ、他のメンバーに現金を借りました（危ない）。
 
 構造的な支援が薄れていく中でなにができるか？という質問に対して、Jay氏からは率直に「財政的に支援が必要」と述べられました。
 PyLadiesやDjango Girlsやローカルのコミュニティが継続して欲しいなら寄付をしてほしい、と伝えました。
@@ -66,21 +66,21 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 
 [^smartphone]: [旅行が一瞬で台無しになる…海外紙が警告｢アメリカの空港で続く"スマホ検査"の異様な実態｣ ｢怪しい｣と思われただけでデータが抜き取られるケースも | PRESIDENT Online（プレジデントオンライン）](https://president.jp/articles/-/94921)
 
-## キーノート：Linn Root
+## キーノート：Lynn Root
 
 * ビデオ：<https://www.youtube.com/watch?v=Bglsof9b23k>
 * <https://us.pycon.org/2025/about/keynote-speakers/#lynn-root>
 
-カンファレンス2日目のキーノートはLinn Root氏です。
-Linn Root氏は現在SpotifyのエンジニアでPyLadiesのChairであり、Python Software Foundationのフェローメンバーでもあります。
+カンファレンス2日目のキーノートはLynn Root氏です。
+Lynn Root氏は現在SpotifyのエンジニアでPyLadiesのChairであり、Python Software Foundationのフェローメンバーでもあります。
 
-そんな多才なLinn氏ですが、ハードに仕事をしており、昇進する数ヶ月前にイタリアの会議からロシアの会議に向かう予定でした。
-しかし、ものすごく燃え尽きており「家に帰りたい、ネコに会いたい！！」と思い、ロシアの会議をキャンセルしてアメリカに帰ったそうです。
+そんな多才なLynn氏ですが、イタリアの会議からロシアの会議に向かう予定の中、ものすごく燃え尽きた状態になったそうです。
+ことときは昇進する数ヶ月前であり、ハードに仕事をこなしていましたが、燃え尽きた状態となり「家に帰りたい、ネコに会いたい！！」と思い、ロシアの会議をキャンセルしてアメリカに帰ったそうです。
 
-```{figure} images/linn.jpg
+```{figure} images/lynn.jpg
 :width: 200px
 
-Linn Root氏
+Lynn Root氏
 ```
 
 話は学生時代に戻り、子どもから大人になる悩みの話となりました。
@@ -93,7 +93,7 @@ Linn Root氏
 * 想像力に富んでいる
 * リラックスして覚醒状態で行われる
 
-そしてLinn氏は燃え尽きから回復するために、積極的に遊んだそうです。
+そしてLynn氏は燃え尽きから回復するために、積極的に遊んだそうです。
 まずはスカイダイビング。
 次に100日間プロジェクトとして絵を描き続けたそうです。うまくなりたいわけではなく、ただ過程を楽しむために。
 その後Spotifyの社員バンドで高校生以来のベースを演奏したそうです。そのバンドで現在の婚約者と出会ったそうです。
@@ -102,34 +102,32 @@ Linn Root氏
 そして聴衆に「みんな楽しんでふざけ回りましょう」と伝えてトークは終わりました。
 
 とても共感できる内容のトークでした。
-また、スライド前編にLynn氏による手描きのイラストが使われており、これも100日絵を描き続けた成果なのか？と思いました。
+また、スライド全編にLynn氏による手描きのイラストが使われており、これも100日絵を描き続けた成果なのか？と思いました。
 
 ````{admonition} PyCon での PSFメンバーランチについて
 
 一般社団法人PyCon JP Association理事の吉田（[@koedoyoshida](https://twitter.com/koedoyoshida/)）です。
 このコラムではPSFメンバーランチについて紹介します。
 
-PSFメンバーランチとは、PyCon US中のどこか一日カンファレンスランチの時間帯で、Python Software Foundation（PSF）のさまざまな地域のメンバーが集まってランチするサブイベントです。
+PSFメンバーランチとは、PyCon US中のいずれかの日のランチ時間帯に、Python Software Foundation（PSF）のさまざまな地域のメンバーが集まってランチするサブイベントです。
 
 例年ここではランチを取りながら、PSFのスタッフとボードメンバーから昨年の活動や会計に関する報告がされ、他のPSFメンバーと交流します。今年もPython生みの親のGuido van Rossum氏が参加していました。
-今年も主にPSFのExecutive DirectorであるDeb Nicholson氏から説明がありました。
+主にPSFのExecutive DirectorであるDeb Nicholson氏から説明がありました。
 
 活動や会計報告と言うだけでは無味乾燥に思われるかも知れませんが、今年もプレゼンテーションに加え、フルカラーで30ページ弱の報告資料冊子が用意されており、大変分かりやすくなっていました。
 
-この冊子にも一日目のPyCon USのオープニング記事で書かれたPyCon JP 2024のライトニングトークの出番待ち写真が使われていたのを発見し、とても嬉しかったです。
-
 本題の会計報告についてです。
-PSFの収入の主要な物としては、年間スポンサーおよびPyCon USなどのイベントの参加者収入となります。また、主な支出としてはPyCon USの開催費用や遠方などからの参加者に対する費用の援助であるTravel Grant、スタッフ人件費、またPython開発者の保険料の支払いなどがあります。
+PSFの収入の主要な物としては、年間スポンサーおよびPyCon USなどのイベントの参加者収入となります。また、主な支出としてはPyCon USの開催費用、遠方などからの参加者に対する費用の援助であるTravel Grant、スタッフ人件費、またPython開発者の保険料の支払いなどがあります。
 
 今年の報告および報告資料を読んで、特に大きな変化が見られたのは資産状況の推移とその背景です。昨年の総資産がおよそ545万ドルだったのに対し、今年は約426万ドルと、約120万ドル（およそ2割）減少していました。今年の資料だけではこの原因は明確ではありませんでしたが、手持ちの昨年の資料と比較してみたところ、「Packaging Work Group/Infrastructure/Other」に関連する支出が、合計で100万ドルほど増加しているように見受けられ、これが主な要因と考えられました。
 
 ```{figure} images/psfbooklet3.jpg
 :width: 400
 
-今年の冊子のGrowrh of AssetsおよびProgram Service Expensesのなどのページ
+Program Service ExpensesとGrowth of Assetsのページ
 ```
 
-こちらについて、吉田でその場で質問して再確認したところ、今年の報告資料にもあるPSF PyPI Safety & Securityの活動に大きく費用がかかっているとのことでした。これについては今回は特に重点的に投資しているとのことでした。
+こちらについて、その場で質問して再確認したところ、今年の報告資料にもあるPSF PyPI Safety & Securityの活動に多くの費用がかかっているとのことでした。これについては今回は特に重点的に投資しているとのことでした。
 
 ```{figure} images/psfbooklet4.jpg
 :width: 400
