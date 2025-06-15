@@ -1,12 +1,52 @@
 # カンファレンス3日目
 
-## Lightning Talk
+カンファレンス3日目です。今日の朝食はメニューが変わってブリトーでした。
+
+```{figure} images/breakfast-day3.jpg
+:width: 200px
+
+3日目の朝食はブリトー
+```
+
+## ライトニングトーク
 
 * ビデオ：<https://www.youtube.com/watch?v=lXngPPRaqGg>
 
+カンファレンス3日目朝には、筆者が前日に通ったライトニングトークをしました。
+タイトルは「Put 🐱 Cat Emojis in your documents!」で、筆者が作成して公開しているSphinx拡張[sphinx-nekochan](https://sphinx-nekochan.readthedocs.io/)を使って、ドキュメントにネコチャン絵文字を挿入するというものです。
+
+* スライド：<https://slides.takanory.net/slides/20250518pyconus/>
+
+私の発表はビデオの16分49秒頃からはじまるのですが、司会の方が「次のトークはPythonコミュニティにとって非常に重要な2つの話題について話します。ネコと絵文字です。」というとても素晴らしい前振りをしてくれました。感謝です。
+
+実際にビデオを見て欲しいのですが、トークの最初で私が「Do you like Cats?（ネコは好きですか？）」と問いかけると、会場から「Yeeees!!」のような声がたくさん上がって、非常にポジティブな聴衆を前に楽しくトークができました。
+しかまつさん作の[ネコチャン絵文字](https://note.com/shikamatsu/n/nd217dc0617db)が世界デビューしました。
+
+```{figure} images/takanory-lt.jpg
+:width: 400px
+
+ライトニングトークの様子
+```
+
+3日目朝のライトニングトークでは、毎年恒例の世界中のPyConやPythonイベントのリレートークがあります。
+1イベント30秒くらいで、世界中のイベント主催者が自分たちのイベントを紹介します。
+ビデオでは47分53秒頃からはじまります。
+発表が始まる前、世界中のイベント主催者が並んで待っています（この写真は私がKwonHanさんに頼まれて撮影しました）。
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">pycon organizers in the line ⁰<a href="https://twitter.com/hashtag/PyConUS?src=hash&amp;ref_src=twsrc%5Etfw">#PyConUS</a> <a href="https://t.co/202qI0kCKV">pic.twitter.com/202qI0kCKV</a></p>&mdash; KwonHan (@darjeelingt) <a href="https://twitter.com/darjeelingt/status/1924089896634871876?ref_src=twsrc%5Etfw">May 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+日本からはPyCon JP 2025座長の西本さんがイベントの紹介をしていました。
+主催者が来ていないときには、スライドを他の人が紹介するんですが、52分24秒からPyOhio、PyCon UK、DjangoCon USを一人で紹介した方がちょっと面白いので、見てみてください。
+	
+```{figure} images/nishimotz-lt.jpg
+:width: 400px
+
+西本さんのライトニングトークの様子
+```
+
 ## Keynote: The Marshall Project
 
-
+* ビデオ：<https://www.youtube.com/watch?v=qog-dGVhSBI>
 * https://us.pycon.org/2025/about/keynote-speakers/#the-marshal-project
 * https://www.themarshallproject.org/
 
@@ -16,6 +56,7 @@
 
 ## PSF - Update from our Security Engineers
 
+* ビデオ：<https://www.youtube.com/watch?v=1xbPerneIqg>
 * 2FA対応
 * メールが生きているかチェック→ドメイン失って乗っ取られないように
 
@@ -70,16 +111,19 @@ CrossHariのポスター
 
 ## Keynote: Dr. Kari L. Jordan
 
+* ビデオ：<https://www.youtube.com/watch?v=3UOLpTA7pRI>
 * https://us.pycon.org/2025/about/keynote-speakers/#dr-kari-l-jordan
 
 ## Python Steering Council
 
+* ビデオ：<https://www.youtube.com/watch?v=BrEjbbDdQsM>
 * https://us.pycon.org/2025/about/keynote-speakers/#python-steering-council
 * Sttering Councilがやっていることを説明
 * 3.14の新機能をいろいろ説明
 
 ## Python Software Foundation Update & Awards
 
+* ビデオ：<https://www.youtube.com/watch?v=zEOG8TCT_kI>
 PSFから最新の情報とアワードの表彰がありました。
 PSFの理事の選挙が8月か9月に開催されるとのことです。
 PyCon USの次の開催地はカリフォルニアの
@@ -92,6 +136,7 @@ PSFのExecutive Directorを長年勤めていたEwa氏の受賞の時には、�
 
 ## Closing
 
+* ビデオ：<https://www.youtube.com/watch?v=7ZgPyBQVg8k>
 * PyLadies Auctuin: 67,000 USD
 * キャプションがすごい
 
