@@ -36,7 +36,7 @@ Eric Matthes氏によるライトニングトーク
 * Cristián Maureira-Fredes氏：スペイン語圏コミュニティの[Python España](https://es.python.org/)の主催者
 * Alla Barbalat氏：モデレーター。弁護士でPython愛好家であり、サンフランシスコの[SF Python](https://www.sfpythonmeetup.com/)の主催者
 
-パネラーはCristián氏はベルリン在住ですが、それ以外はアメリカ在住であり、昨年のD&Iパネルとは異なる方向性の話となりました。[^2024day2]
+パネラーのCristián氏はベルリン在住ですが、それ以外はアメリカ在住であり、昨年のD&Iパネルとは異なる方向性の話となりました。[^2024day2]
 
 [^2024day1]: [#01 PyCon US 2024の開幕、Day 1ライトニングトークに挑戦 | gihyo.jp](https://gihyo.jp/article/2024/07/pycon-us-2024#ghdJ5nqSdH)
 [^2024day2]: [#02 PyCon US 2024 Day 2、CPythonコンパイルの新たなパイプライン | gihyo.jp](https://gihyo.jp/article/2024/07/pycon-us-2024-02#gh4EPg2SZe)
@@ -75,7 +75,7 @@ Jay氏はさらにPython EspañaやPAO（Python Asia Organization）のように
 Lynn Root氏は現在SpotifyのエンジニアでPyLadiesのChairであり、Python Software Foundationのフェローメンバーでもあります。
 
 そんな多才なLynn氏ですが、イタリアの会議からロシアの会議に向かう予定の中、ものすごく燃え尽きた状態になったそうです。
-ことときは昇進する数ヶ月前であり、ハードに仕事をこなしていましたが、燃え尽きた状態となり「家に帰りたい、ネコに会いたい！！」と思い、ロシアの会議をキャンセルしてアメリカに帰ったそうです。
+このときは昇進する数ヶ月前であり、ハードに仕事をこなしていましたが、燃え尽きた状態となり「家に帰りたい、ネコに会いたい！！」と思い、ロシアの会議をキャンセルしてアメリカに帰ったそうです。
 
 ```{figure} images/lynn.jpg
 :width: 200px
@@ -207,7 +207,8 @@ Pythonは87種類の文字列のエンコーディング[^encoding]に対応し�
 [^string_interning]: <https://github.com/python/cpython/blob/main/InternalDocs/string_interning.md>
 
 Unicodeでは見た目が同じでも異なる文字の場合があります。
-たとえば`"\u000E5"`と`"\u0061\u030A"`というコードはどちらも同じ見た目の`"å"`となりますが、前者は1文字ですが、後者は2文字のUnicode文字が結合しています。
+たとえば`"\u000E5"`と`"\u0061\u030A"`というコードはどちらも同じ見た目の`"å"`となります。
+前者は1文字ですが、後者は2文字のUnicode文字が結合しています。
 この2つの文字列を比較すると`False`となります。
 
 ```python
@@ -219,7 +220,7 @@ Unicodeでは見た目が同じでも異なる文字の場合があります。
 False
 ```
 
-このような場合にunicodedataモジュールの`normalize`関数を使用すると、正規化されて文字列として等しいことが確認できます。
+このような場合にunicodedataモジュールの`normalize`関数を使用すると、正規化されて文字列として等価であることが確認できます。
 また、面白いことにPythonの識別子は正規化をしているそうです。
 
 ```python
