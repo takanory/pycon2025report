@@ -133,7 +133,7 @@ Reuvenさんと筆者
 
 ## Phantom Dependencies: is your requirements.txt haunted? - PyCon US 2025
 
-* https://us.pycon.org/2025/schedule/presentation/14/
+* <https://us.pycon.org/2025/schedule/presentation/14/>
 * ビデオ：<https://www.youtube.com/watch?v=x9K3xPmi_tg>
 * Seth Michael Larson
 * SBOMがでペン伝シーに対応するの?
@@ -146,18 +146,119 @@ Reuvenさんと筆者
 ## Keynote: Dr. Kari L. Jordan
 
 * ビデオ：<https://www.youtube.com/watch?v=3UOLpTA7pRI>
-* https://us.pycon.org/2025/about/keynote-speakers/#dr-kari-l-jordan
+* <https://us.pycon.org/2025/about/keynote-speakers/#dr-kari-l-jordan>
 
 ## Python Steering Council
 
 * ビデオ：<https://www.youtube.com/watch?v=BrEjbbDdQsM>
-* https://us.pycon.org/2025/about/keynote-speakers/#python-steering-council
-* Sttering Councilがやっていることを説明
-* 3.14の新機能をいろいろ説明
+* <https://us.pycon.org/2025/about/keynote-speakers/#python-steering-council>
+
+Python Steering CouncilはPythonの言語仕様を最終決定するSteering Council（運営評議会）のメンバーが、現在の状況や今後のPythonについて共有する場です。
+Steering Councilは毎年投票で5名が選ばれ、2025年はBarry Warsaw氏、Donghee Na氏、Emily Morehouse氏、Pablo Galindo Salgado氏、Gregory P. Smith氏がメンバーです。
+Emily氏は欠席でした。
+Donghee氏は韓国在住で、おそらくアジア系で初めてのSteering Councilメンバーです。
+
+```{figure} images/sc.jpg
+:width: 400
+
+Steering Councilメンバー（左からBarry氏、Pablo氏、Gregory氏、Donghee氏）
+```
+
+最初にSteering Councilがなにをしているかの説明がBarry氏からありました。
+Pythonの拡張提案であるPEPの受諾または拒否の決定し、Pythonの品質と安定性を維持しています。
+また、PSFと協力してプロジェクトに資産を管理しています。
+詳細は以下のPEPドキュメントを参照してください。
+
+* [PEP 13 – Python Language Governance | peps.python.org](https://peps.python.org/pep-0013/)
+
+Steering Councilメンバーは毎週90分のミーティングを実施しているそうです。
+また、気軽にコミュニケーションできるオフィスアワーも実施しているそうです[^officehour]。
+
+[^officehour]: <https://github.com/python/steering-council?tab=readme-ov-file#office-hours>
+
+Pythonへの新機能の取り込みはbeta 1のリリースまでに行われます。
+Python 3.14は現在[beta 3](https://www.python.org/downloads/release/python-3140b3/)がリリースされており、取り込まれる新機能は確定している状態です。
+
+Gregory氏からは、Pythonのコア開発者と資金調達についての話がありました。
+Pythonは多数のコア開発者によって開発されています。
+普段はオンラインで活動していますが、年に1回「Core Team Sprints」という開発イベントを1週間実施しています。
+PSFでは現在フルタイムの開発者を4名雇用しており、それ以外にも開発イベントなどでも資金が必要です。
+雇用を維持するためには継続的な資金の提供が必要ということで寄付の呼びかけがありましたが、なんとそのスライドにネコチャン絵文字が使われていました！
+おそらくGregory氏が私のライトニングトークを見てネコチャン絵文字を気に入ったらしく、氏が担当しているスライドにネコチャン絵文字がいくつも使われていました。
+これにはびっくりしました。
+
+```{figure} images/psf-funding.jpg
+:width: 400
+
+寄付の呼びかけスライドにネコチャン絵文字！
+```
+
+次にDonghee氏からワーキンググループについて説明がありました。
+Pythonのドキュメントとその翻訳などを管理するPython Documentation Editorial Board（[PEP 732](https://peps.python.org/pep-0732/)）の紹介がありました。
+現在のボードメンバーはMariatta Wijaya氏、Ned Batchelder氏、Joanna Jablonski氏、Guido van Rossum氏、Carol Willing氏の5名です。
+今はここにGuidoさんがいるんですね。
+
+```{figure} images/donghee.jpg
+:width: 400
+
+Donghee氏
+```
+
+他にもPythonのC APIの開発とメンテナンスの中心となるC API Working Group（[PEP 731](https://peps.python.org/pep-0731/)）、
+型システムを担当するTyping Council（[PEP 729](https://peps.python.org/pep-0729/)）が紹介されました。
+Typing Councilについては以下の記事でも紹介しているので、興味のある方は呼んでみてください。
+
+* [Python型ヒントの動向と新しい機能の紹介 | gihyo.jp](https://gihyo.jp/article/2024/11/monthly-python-2411#ghekcz_iGK)
+
+最後にPablo氏からPython 3.14の新機能について紹介がありました。
+Pablo氏はなにか動物の耳のカチューシャを付けているのですが、これは「この耳を付けて登壇したら100ドルPSF寄付する、とHynek氏が約束した」からだそうです。お茶目ですね。
+
+```{figure} images/pablo.jpg
+:width: 200
+
+ケモ耳を付けたPablo氏
+```
+
+ここでは以下の新機能が紹介されました。たくさんあるのでここでは簡単に紹介します。
+
+* [PEP 649](https://peps.python.org/pep-0649/) and [749](https://peps.python.org/pep-0749/): deferred evaluation of annotations
+  * (TODO)
+* [PEP 741](https://peps.python.org/pep-0741/): Python configuration C API
+  * Pythonの設定を行うための`PyConfig_Get()`等のC API
+* [PEP 750](https://peps.python.org/pep-0750/): Template strings
+  * `t"Hello {name}"`と書けるテンプレート文字列。安全にHTMLコードに変換するなどの用途が考えられる
+* [PEP 768](https://peps.python.org/pep-0768/): Safe external debugger interface for CPython
+  * `sys.remote_exec(pid, script_path)`等で安全な外部デバッガーへのインターフェース
+* [PEP 784](https://peps.python.org/pep-0784/): Adding Zstandard to the standard library
+  * [Zstandard](https://ja.wikipedia.org/wiki/Zstandard)という圧縮、展開が速い圧縮アルゴリズムcompression.zstdを追加。tarfile、zipfile、shutilモジュールにも組み込まれる
+* [PEP 758](https://peps.python.org/pep-0758/): Allow except and except* expressions without parentheses
+  * except*の複数例外がカッコ（`()`）なしで記述可能に
+* [Better error messages](https://docs.python.org/ja/3.14/whatsnew/3.14.html#improved-error-messages)
+  * `while`、`async`などのキーワードの綴り間違いへの対応など、わかりやすいエラーメッセージへの改善
+* [Asyncio introspection capabilities](https://docs.python.org/ja/3.14/whatsnew/3.14.html#asyncio-introspection-capabilities)
+  * (TODO)
+* [A new type of interpreter](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-tail-call)
+  ( `--with-tail-call-interp`でビルドできる新しいインタープリター。数%のPythonの高速化を実現
+* [Syntax highlighting in PyREPL](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-pyrepl-highlighting)
+  * Pythonの対話モードでラベルに色が付くなどのシンタックスハイライトに対応
+
+各機能の詳細はリンクしているPEPドキュメントや、公式ドキュメントの[What's new in Python 3.14](https://docs.python.org/ja/3.14/whatsnew/3.14.html)を参照してください。
+
+Gregory氏がZstandardの説明をするときにまたスライドにネコチャン絵文字が出てきました。
+このときGregory氏は「今朝のライトニングトークで『ネコはものごとを良くする』と言っていたので、スライドに（絵文字を）入れました」と私の今朝のトークについて触れていました（16:38）。
+まさか言及されるとは思わなかったので、二度びっくりです。
+
+```{figure} images/zstd.jpg
+:width: 400
+
+Zstandardのスライドにもネコチャン絵文字
+```
+
 
 ## Python Software Foundation Update & Awards
 
 * ビデオ：<https://www.youtube.com/watch?v=zEOG8TCT_kI>
+
 PSFから最新の情報とアワードの表彰がありました。
 PSFの理事の選挙が8月か9月に開催されるとのことです。
 PyCon USの次の開催地はカリフォルニアの
