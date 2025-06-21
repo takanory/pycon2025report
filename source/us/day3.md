@@ -222,7 +222,7 @@ Pablo氏はなにか動物の耳のカチューシャを付けているのです
 ここでは以下の新機能が紹介されました。たくさんあるのでここでは簡単に紹介します。
 
 * [PEP 649](https://peps.python.org/pep-0649/) and [749](https://peps.python.org/pep-0749/): deferred evaluation of annotations
-  * (TODO)
+  * 関数やクラスのアノテーションの遅延評価への対応と、そのための[annotationlib](https://docs.python.org/ja/3.14/library/annotationlib.html#module-annotationlib)モジュールの追加
 * [PEP 741](https://peps.python.org/pep-0741/): Python configuration C API
   * Pythonの設定を行うための`PyConfig_Get()`等のC API
 * [PEP 750](https://peps.python.org/pep-0750/): Template strings
@@ -236,7 +236,7 @@ Pablo氏はなにか動物の耳のカチューシャを付けているのです
 * [Better error messages](https://docs.python.org/ja/3.14/whatsnew/3.14.html#improved-error-messages)
   * `while`、`async`などのキーワードの綴り間違いへの対応など、わかりやすいエラーメッセージへの改善
 * [Asyncio introspection capabilities](https://docs.python.org/ja/3.14/whatsnew/3.14.html#asyncio-introspection-capabilities)
-  * (TODO)
+  * 非同期タスクを使用したPythonのプロセスを検査するための、新しいコマンドラインインタフェースを追加。`python -m asyncio ps PID`のようなコマンドで検査できる
 * [A new type of interpreter](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-tail-call)
   ( `--with-tail-call-interp`でビルドできる新しいインタープリター。数%のPythonの高速化を実現
 * [Syntax highlighting in PyREPL](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-pyrepl-highlighting)
@@ -254,6 +254,26 @@ Gregory氏がZstandardの説明をするときにまたスライドにネコチ�
 Zstandardのスライドにもネコチャン絵文字
 ```
 
+最後のパートではFree threading（フリースレッディング）について時間をとって語られました。
+Free threadingとはCPythonからGIL（Global Interpreter Lock）を除去し、並列処理のパフォーマンスを上げるというものです。
+Free threadingについての詳細は以下の記事も参考にしてください。
+
+* [2025年3月: Python のGILと3.13の実験的な新機能「free threading」を知る - gihyo.jp連載 ドキュメント](https://jrfk-202503.gihyo-python-monthly.pages.dev/2025/202503)
+
+Python 3.13のFree threadingをシングルスレッドで動作させると40%遅かったが、3.14では2〜5%となったそうです。
+Free threadingの今後のサポートについて議論するためにPEP 779が提案され、PyCon US 2025の後にアクセプトされました。
+Free threadingはCPythonで公式にサポートされて、実験的ではなくなりました。
+ただしフェーズ2という状態で、オプションであることに変わりはありません。
+
+* [PEP 779 – Criteria for supported status for free-threaded Python | peps.python.org](https://peps.python.org/pep-0779/)
+
+Free threadingについてインストール方法、制限、ライブラリの対応方法についてなど、ドキュメントが提供されていることも紹介されました。
+
+* [Python support for free threading — Python 3.14.0b3 ドキュメント](https://docs.python.org/ja/3.14/howto/free-threading-python.html#python-support-for-free-threading)
+* [Python Free-Threading Guide](https://py-free-threading.github.io/)
+
+Python 3系も3.14までバージョンが進んできましたが、まだまだたくさん改善、機能追加が行われるということに驚きました。
+Free threadingの今後にも注目です。
 
 ## Python Software Foundation Update & Awards
 
