@@ -1,5 +1,43 @@
 # スプリント
 
+カンファレンスのあとは開発スプリントです。
+スプリントとは、Python関連のオープンソースのプロジェクトに参加し、一緒に開発をするというイベントです。
+PyCon US 2025のスプリントは5月19日（月）から22日（木）の4日間開催されます。筆者は1日目のみ参加しました。
+
+スプリントの一覧は以下のページで確認できます。
+CPython、mypy and mypyc、tstring、Read the Docs、PyLadiesCon Web Portalなどさまざまなプロジェクトがあります。
+
+* [Development Sprints - PyCon US 2025](https://us.pycon.org/2025/events/dev-sprints/)
+
+会場に行くと、ボードにどの部屋でどのプロジェクトが行われているかが書いています。
+参加者はこのボードを見て参加したいプロジェクトの部屋に行きます。
+たとえば「First-Time CPython Contributors（初めてのCPythonへの貢献）」はRoom 315であることがわかります。
+CPythonのコアチームは隣のRoom 316で行われており、初めての人と経験者の部屋を分けるようになったんdすが、良いアイデアだと思います。
+
+```{figure} images/sprints-board.jpg
+:width: 200
+
+スプリントの部屋割りボード
+```
+
+スプリントの各部屋には丸テーブルがあり、一緒に開発やディスカッションを進めます。
+筆者はトークとライトニングトークでだいぶ疲れていたため、プロジェクトには参加せず、自分のタスクを進めていました。
+
+```{figure} images/nishimotz-sprints.jpg
+:width: 400
+
+スプリントに参加する西本さん
+```
+
+スプリント会場の廊下ではGuidoさんとDongheeさん（Steering Councilの一人）が膝をつき合わせて会話していました。
+なにの話をしているかはわかりませんが、Python開発の進め方について語っているのでしょうか。
+
+```{figure} images/guido-donghee.jpg
+:width: 400
+
+語り合うGuidoさんとDongheeさん
+```
+
 ````{admonition} First-time CPython Contributions
 橘祐一郎（[@whitphx](https://github.com/whitphx)）です。
 スプリントでは、First-time CPython Contributionsのテーブルに参加しました。
@@ -95,3 +133,4 @@ Paul氏と清水川
 ```
 
 ````
+

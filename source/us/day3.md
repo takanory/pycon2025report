@@ -44,16 +44,6 @@
 西本さんのライトニングトークの様子
 ```
 
-## Keynote: The Marshall Project
-
-* ビデオ：<https://www.youtube.com/watch?v=qog-dGVhSBI>
-* https://us.pycon.org/2025/about/keynote-speakers/#the-marshal-project
-* https://www.themarshallproject.org/
-
-* 2名のキーノートと1名のモデレーター
-* それぞれのバックグラウンドを紹介
-* Marshall Projectのミッション
-
 ## PSF - Update from our Security Engineers
 
 * ビデオ：<https://www.youtube.com/watch?v=1xbPerneIqg>
@@ -119,34 +109,6 @@ Reuven LernerさんはPythonのトレーニングを提供しています。
 
 Reuvenさんと筆者
 ```
-
-## Reinventing the Wheel: A Community-Driven Roadmap for Python Packaging
-
-* ビデオ：<https://www.youtube.com/watch?v=1Oki8vAWb1Q>
-* https://us.pycon.org/2025/schedule/presentation/100/
-* Jonathan Dekhtiar, Barry Warsaw 
-* WheelNext
-* いろんなハードウェアに対応できない
-* PyTorchとかそういう系のやつが必要としてそう
-* PEP772でパッケージングのガバナンス
-* GPUとかのバージョンごとのwheelが作れる?
-
-## Phantom Dependencies: is your requirements.txt haunted? - PyCon US 2025
-
-* <https://us.pycon.org/2025/schedule/presentation/14/>
-* ビデオ：<https://www.youtube.com/watch?v=x9K3xPmi_tg>
-* Seth Michael Larson
-* SBOMがでペン伝シーに対応するの?
-* PEP 770 でSBOMはいる。Apr 11 にAcceptされた
-* SBOMのjsonがつく
-* Linuxのライブラリが入る?
-* anchore/syft: CLI tool and library for generating a Software Bill of Materials from container images and filesystems https://github.com/anchore/syft
-* anchore/grype: A vulnerability scanner for container images and filesystems https://github.com/anchore/grype
-
-## Keynote: Dr. Kari L. Jordan
-
-* ビデオ：<https://www.youtube.com/watch?v=3UOLpTA7pRI>
-* <https://us.pycon.org/2025/about/keynote-speakers/#dr-kari-l-jordan>
 
 ## Python Steering Council
 
