@@ -180,3 +180,38 @@ YouTubeにもアップされており、車窓の映像などでドライブの�
 ```
 
 ## 終わりに
+
+PyCon US 2025のレポートは以上です。
+今年のPyCon USは、自身としてはトークとライトニングトークを行うことができ、非常に達成感のあるイベントでした。
+日本からの参加者も多く、一緒にシカゴまで車で移動するという体験も、なかなかできないことなので楽しかったです。
+
+なお、筆者が行っているYouTubeライブ「PyCon JP TV」でもPyCon US 2025について紹介しています。
+寺田さんの写真を中心としたレポートで、異なった目線からの感想もあるので、ぜひご覧になってください。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4QSLTecofhE?si=CVV8Up1dnz_6M0EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+オフィシャルの発表動画は、PyCon USのYouTubeチャンネルで公開予定です。 以下のページで確認してください。
+
+* [PyCon US - YouTube](https://www.youtube.com/@PyConUS/featured)
+
+また、日本からの参加メンバー5名が、それぞれの視点でPyCon USでの体験を語る「PyCon US 2025 参加報告会」というイベントを7月10日(木)に開催します。
+渋谷の現地会場とオンラインのハイブリッド開催です。
+こちらに興味のある方はぜひご参加ください。
+
+* [PyCon US 2025 参加報告会 - connpass](https://pyconjp.connpass.com/event/357582/)
+
+```{figure} images/jp-members.jpg
+:width: 400px
+
+日本からの参加メンバーで記念撮影
+```
+
+来年はカリフォルニア州ロングビーチで開催です。
+来年も行くぞ！！そしてディズニーランドのスターウォーズエリアにも行くぞ！！
+
+```{figure} images/half-acre.jpg
+:width: 400px
+
+シカゴのHalf Acre Brewery
+```
+
