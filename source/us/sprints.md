@@ -195,12 +195,6 @@ PyCon US 2025のレポートは以上です。
 
 * [PyCon US - YouTube](https://www.youtube.com/@PyConUS/featured)
 
-また、日本からの参加メンバー5名が、それぞれの視点でPyCon USでの体験を語る「PyCon US 2025 参加報告会」というイベントを7月10日(木)に開催します。
-渋谷の現地会場とオンラインのハイブリッド開催です。
-こちらに興味のある方はぜひご参加ください。
-
-* [PyCon US 2025 参加報告会 - connpass](https://pyconjp.connpass.com/event/357582/)
-
 ```{figure} images/jp-members.jpg
 :width: 400px
 
