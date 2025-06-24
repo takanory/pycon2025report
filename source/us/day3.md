@@ -35,8 +35,9 @@
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">pycon organizers in the line ⁰<a href="https://twitter.com/hashtag/PyConUS?src=hash&amp;ref_src=twsrc%5Etfw">#PyConUS</a> <a href="https://t.co/202qI0kCKV">pic.twitter.com/202qI0kCKV</a></p>&mdash; KwonHan (@darjeelingt) <a href="https://twitter.com/darjeelingt/status/1924089896634871876?ref_src=twsrc%5Etfw">May 18, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-日本からはPyCon JP 2025座長の西本さんがイベントの紹介をしていました。
-主催者が来ていないときには、スライドを他の人が紹介するんですが、52分24秒からPyOhio、PyCon UK、DjangoCon USを一人で紹介した方がちょっと面白いので、見てみてください。
+日本からはPyCon JP 2025座長の西本さんが登壇し（ビデオの54:05くらい）「私は今回はじめてPyCon USに参加したので、みなさんも初めてのPyCon JP 広島開催に初参加しましょう！」と呼びかけていました。
+
+ところで、主催者が来ていないときには、スライドを他の人が紹介するんですが、52分24秒からPyOhio、PyCon UK、DjangoCon USを一人で紹介した方がちょっと面白いので、見てみてください。
 	
 ```{figure} images/nishimotz-lt.jpg
 :width: 400px
@@ -53,7 +54,7 @@
 
 ポスターセッションはボードにA0程度のサイズのポスターを掲示し、その前でディスカッションなどを行う発表形式です。
 筆者もポスターセッションを見て回っていくつか質問やディスカッションをしてきました。
-「色のセオリー」についてのポスターでは、データ可視化ツールのより見やすい色についての発表がありました。
+「色のセオリー」についてのポスターでは、データ可視化ツールのより見やすい色について解説されていました。
 各ツールのデフォルトの色はおすすめではないということで、「ぜひ次に発表する機会があれば、おすすめのカラーテーマを教えて欲しい、もしくはテーマを作って共有してほしい」という話をしました。
 
 ```{figure} images/poster1.jpg
@@ -88,13 +89,13 @@ CrossHariのポスター
 ブースの配置図
 ```
 
-ジョブフェアではやはり有名な企業はすごい人が列に並んで話をするのを待っていました。
+ジョブフェアではやはり有名な企業はたくさんの人が列に並んで話をするのを待っていました。
 私は仕事を探していないので、知り合いのいるLerner Pythonのブースを訪ねました。
 Reuven LernerさんはPythonのトレーニングを提供しています。
 あいさつをしに行くと、PyCon Taiwanで一緒に飲んだ私のことを覚えていてくれたようです。
 
-いつも企業ブースでTシャツを配っているんですが、Tシャツの色がグレーから変わっています。
-「Tシャツの色が変わりましたね」と聞いてみると「妻の好きな○○ピンクにしたんだよ」といった話をしました。
+ReuvenさんのブースではいつもTシャツを配っているんですが、Tシャツの色がグレーから変わっています。
+「Tシャツの色が変わりましたね」と聞いてみると「妻の好きな色にしたんだよ」といった話をしました。
 「日本は今年広島で開催するので、ぜひ来てくださいね」という話もしたんですが、9月末にはユダヤ教の祝日があるらしく、残念ながら参加は難しいそうです。
 開催時期がずれたタイミングで、日本でReuvenさんに再会できることを楽しみにしています。
 
@@ -140,7 +141,7 @@ Pythonは多数のコア開発者によって開発されています。
 普段はオンラインで活動していますが、年に1回「Core Team Sprints」という開発イベントを1週間実施しています。
 PSFでは現在フルタイムの開発者を4名雇用しており、それ以外にも開発イベントなどでも資金が必要です。
 雇用を維持するためには継続的な資金の提供が必要ということで寄付の呼びかけがありましたが、なんとそのスライドにネコチャン絵文字が使われていました！
-おそらくGregory氏が私のライトニングトークを見てネコチャン絵文字を気に入ったらしく、氏が担当しているスライドにネコチャン絵文字がいくつも使われていました。
+おそらくGregory氏が私のライトニングトークを見てネコチャン絵文字を気に入ったとのだと思いますが、氏が担当しているスライドにネコチャン絵文字がいくつも使われていました。
 これにはびっくりしました。
 
 ```{figure} images/psf-funding.jpg
@@ -167,7 +168,7 @@ Typing Councilについては以下の記事でも紹介しているので、興
 * [Python型ヒントの動向と新しい機能の紹介 | gihyo.jp](https://gihyo.jp/article/2024/11/monthly-python-2411#ghekcz_iGK)
 
 最後にPablo氏からPython 3.14の新機能について紹介がありました。
-Pablo氏はなにか動物の耳のカチューシャを付けているのですが、これは「この耳を付けて登壇したら100ドルPSF寄付する、とHynek氏が約束した」からだそうです。お茶目ですね。
+Pablo氏はなにか動物の耳のカチューシャを付けているのですが、これは「この耳を付けて登壇したら100ドルPSFに寄付する、とHynek氏が約束した」からだそうです。お茶目ですね。
 
 ```{figure} images/pablo.jpg
 :width: 200
@@ -175,7 +176,7 @@ Pablo氏はなにか動物の耳のカチューシャを付けているのです
 ケモ耳を付けたPablo氏
 ```
 
-ここでは以下の新機能が紹介されました。たくさんあるのでここでは簡単に紹介します。
+ここでは以下の新機能が紹介されました。たくさんの新機能があるのでこの記事では簡単に紹介します。
 
 * [PEP 649](https://peps.python.org/pep-0649/) and [749](https://peps.python.org/pep-0749/): deferred evaluation of annotations
   * 関数やクラスのアノテーションの遅延評価への対応と、そのための[annotationlib](https://docs.python.org/ja/3.14/library/annotationlib.html#module-annotationlib)モジュールの追加
@@ -243,7 +244,7 @@ PyLadiesアワードでは50名がノミネートされ4名が受賞しました
 PSFのCommunity Service AwardsではPython Asia Organizationの創始者でもあるIqbalさんが受賞していました。
 Iqbalさんの盾は寺田さんが持ち帰って後日渡すことができました。
 
-Distinguish Service Awardsでは長年Pythonコミュニティで大きな貢献をしてきたThomas Wouters氏、Van Lindberg氏、Ewa Jodlowska氏が受賞していました。
+[Distinguish Service Awards](https://www.python.org/community/awards/psf-distinguished-awards/)はPSFから贈られる最高の賞で、今年は長年Pythonコミュニティで多大な貢献をしてきたThomas Wouters氏、Van Lindberg氏、Ewa Jodlowska氏が受賞していました。
 PSFのExecutive Directorを長年勤めていたEwa氏の受賞の時には、会場からひときわ大きな拍手が送られていました。
 
 ```{figure} images/dsa.jpg
