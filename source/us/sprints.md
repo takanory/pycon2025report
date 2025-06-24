@@ -136,12 +136,11 @@ Paul氏と清水川
 
 ````
 
-## シカゴへ
+## シカゴへドライブ
 
-カンファレンスのあとはシカゴに移動しました。
-今回はシカゴ在住の友人であるJasonの提案により、レンタカーを借りてピッツバーグからシカゴへ向かいました。
-Jason家3名と日本メンバー5名で2台に分かれて移動します。
-私は運転免許を持っていないので、寺田さん、清水川さん、Jasonさんにおまかせです。
+今回はシカゴ在住の友人Jasonの提案により、レンタカーでピッツバーグからシカゴへ向かいました。
+Jason家3名と日本メンバー5名で2台に分かれて移動します（私は乗っているだけ）。
+休憩をとりながら9時間くらいでシカゴに無事到着しました。
 
 ```{figure} images/cars.jpg
 :width: 400px
@@ -149,35 +148,18 @@ Jason家3名と日本メンバー5名で2台に分かれて移動します。
 この2台で移動
 ```
 
-途中で高速のサービスプラザの中にある雑そうな中華料理を食べられたので満足です。
-休憩しながらだいたい9時間くらいでシカゴに無事到着しました。
-ドライバーのみなさんお疲れさまでした。
-
-```{figure} images/cybertruck.jpg
-:width: 400px
-
-シカゴにテスラのサイバートラックがいた！！
-```
-
-帰りの車の中で、寺田さんのpodcast [terapyon channel](https://podcast.terapyon.net/)の収録を行い、PyCon US 2025について振り返りました。
+車中で、寺田さんのpodcast [terapyon channel](https://podcast.terapyon.net/)の収録を行い、PyCon US 2025について振り返りました。
 YouTubeにもアップされており、車窓の映像などでドライブの様子がわかって面白いと思います。
 
 * ビデオ：<https://www.youtube.com/watch?v=rDjYzlPW7hM>
 
-シカゴでは当然ながら現場のクラフトビールを飲みに行き、バカでかいシカゴピザ（ディープディッシュピザ）を食べました。
+シカゴでは現地のクラフトビールを飲み、バカでかいシカゴピザ（ディープディッシュピザ）を食べました。
 味はおいしいんですが、一人一切れでだいたいお腹いっぱいです。
-残ったピザはドギーバッグに入れて持ち帰りました。
 
 ```{figure} images/last-night.jpg
 :width: 400px
 
-最後のパーティー
-```
-
-```{figure} images/pizza.jpg
-:width: 400px
-
-シカゴピザ
+シカゴで最後のパーティー
 ```
 
 ## 終わりに
@@ -186,12 +168,12 @@ PyCon US 2025のレポートは以上です。
 今年のPyCon USは、自身としてはトークとライトニングトークを行うことができ、非常に達成感のあるイベントでした。
 日本からの参加者も多く、一緒にシカゴまで車で移動するという体験も、なかなかできないことなので楽しかったです。
 
-なお、筆者が行っているYouTubeライブ「PyCon JP TV」でもPyCon US 2025について紹介しています。
-寺田さんの写真を中心としたレポートで、異なった目線からの感想もあるので、ぜひご覧になってください。
+筆者が行っているYouTubeライブ[PyCon JP TV](https://tv.pycon.jp)でもPyCon US 2025について紹介しています。
+寺田さんの写真を中心としたレポートで、異なった目線からの感想もあります。ぜひご覧になってください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4QSLTecofhE?si=CVV8Up1dnz_6M0EY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-オフィシャルの発表動画は、PyCon USのYouTubeチャンネルで公開予定です。 以下のページで確認してください。
+オフィシャルの発表動画は、PyCon USのYouTubeチャンネルで公開されています。以下のページで確認してください。
 
 * [PyCon US - YouTube](https://www.youtube.com/@PyConUS/featured)
 
@@ -201,7 +183,7 @@ PyCon US 2025のレポートは以上です。
 日本からの参加メンバーで記念撮影
 ```
 
-来年はカリフォルニア州ロングビーチで開催されます。
+PyCon US 2026はカリフォルニア州ロングビーチで開催されます。
 来年も行くぞ！！そしてディズニーランドのスターウォーズエリアにも行くぞ！！
 
 ```{figure} images/half-acre.jpg
