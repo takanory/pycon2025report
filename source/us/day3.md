@@ -13,14 +13,14 @@
 * ビデオ：<https://www.youtube.com/watch?v=lXngPPRaqGg>
 
 カンファレンス3日目朝には、筆者が前日に通ったライトニングトークをしました。
-タイトルは「Put 🐱 Cat Emojis in your documents!」で、筆者が作成して公開しているSphinx拡張[sphinx-nekochan](https://sphinx-nekochan.readthedocs.io/)を使って、ドキュメントにネコチャン絵文字を挿入するというものです。
+タイトルは「Put 🐱 Cat Emojis in your documents!」で、筆者が作成して公開しているSphinx拡張[sphinx-nekochan](https://sphinx-nekochan.readthedocs.io/)を使って、しかまつさん作のネコチャン絵文字をドキュメントに挿入するというものです。
 
 * スライド：<https://slides.takanory.net/slides/20250518pyconus/>
 
 私の発表はビデオの16分49秒頃からはじまるのですが、司会の方が「次のトークはPythonコミュニティにとって非常に重要な2つの話題について話します。ネコと絵文字です。」というとても素晴らしい前振りをしてくれました。感謝です。
 
 実際にビデオを見て欲しいのですが、トークの最初で私が「Do you like Cats?（ネコは好きですか？）」と問いかけると、会場から「Yeeees!!」のような声がたくさん上がって、非常にポジティブな聴衆を前に楽しくトークができました。
-しかまつさん作の[ネコチャン絵文字](https://note.com/shikamatsu/n/nd217dc0617db)が世界デビューしました。
+[ネコチャン絵文字](https://note.com/shikamatsu/n/nd217dc0617db)が世界デビューしました。
 
 ```{figure} images/takanory-lt.jpg
 :width: 400px
@@ -64,13 +64,13 @@
 ```
 
 CrossHairのポスターでは、コードを自動的に解析してテストをしてくれるライブラリ[CrossHair](https://github.com/pschanely/CrossHair)の紹介をしていました。
-PurePythonしか対象にできないため、制限があるという話でした。
+CrossHairはPurePythonしか対象にできないため、制限があるという話でした。
 ただし、大きなプロダクトだったとしても、PurePythonで書かれている部分に絞って適用することは可能だそうです。
 
 ```{figure} images/poster2.jpg
 :width: 400
 
-CrossHariのポスター
+CrossHairのポスター
 ```
 
 ### ジョブフェア、コミュニティショーケース
@@ -80,7 +80,7 @@ CrossHariのポスター
 ジョブフェアのみに参加することも可能で、その場合のチケット代は30ドルです。
 会場の近くに住んでいて仕事を探している人には、よい機会かなと思います。
 
-以下の配置図を見るとわかりますが、AWS、Bloombarg、Metaと大きな企業が2024年よりも戻ってきたという印象です。
+以下の配置図を見るとわかりますが、AWS、Bloomberg、Metaと大きな企業が2024年よりも戻ってきたという印象です。
 ただ、全体としてはジョブフェアのブース数がそれほど多くなく、コミュニティのブースが6つほどあります。
 
 ```{figure} images/jobfair-map.jpg
@@ -163,7 +163,7 @@ Donghee氏
 
 他にもPythonのC APIの開発とメンテナンスの中心となるC API Working Group（[PEP 731](https://peps.python.org/pep-0731/)）、
 型システムを担当するTyping Council（[PEP 729](https://peps.python.org/pep-0729/)）が紹介されました。
-Typing Councilについては以下の記事でも紹介しているので、興味のある方は呼んでみてください。
+Typing Councilについては以下の記事でも紹介しているので、興味のある方は読んでみてください。
 
 * [Python型ヒントの動向と新しい機能の紹介 | gihyo.jp](https://gihyo.jp/article/2024/11/monthly-python-2411#ghekcz_iGK)
 
@@ -195,7 +195,7 @@ Pablo氏はなにか動物の耳のカチューシャを付けているのです
 * [Asyncio introspection capabilities](https://docs.python.org/ja/3.14/whatsnew/3.14.html#asyncio-introspection-capabilities)
   * 非同期タスクを使用したPythonのプロセスを検査するための、新しいコマンドラインインタフェースを追加。`python -m asyncio ps PID`のようなコマンドで検査できる
 * [A new type of interpreter](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-tail-call)
-  ( `--with-tail-call-interp`でビルドできる新しいインタープリター。数%のPythonの高速化を実現
+  `--with-tail-call-interp`でビルドできる新しいインタープリター。数%のPythonの高速化を実現
 * [Syntax highlighting in PyREPL](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-pyrepl-highlighting)
   * Pythonの対話モードでラベルに色が付くなどのシンタックスハイライトに対応
 
@@ -244,7 +244,7 @@ PyLadiesアワードでは50名がノミネートされ4名が受賞しました
 PSFのCommunity Service AwardsではPython Asia Organizationの創始者でもあるIqbalさんが受賞していました。
 Iqbalさんの盾は寺田さんが持ち帰って後日渡すことができました。
 
-[Distinguish Service Awards](https://www.python.org/community/awards/psf-distinguished-awards/)はPSFから贈られる最高の賞で、今年は長年Pythonコミュニティで多大な貢献をしてきたThomas Wouters氏、Van Lindberg氏、Ewa Jodlowska氏が受賞していました。
+[Distinguished Service Awards](https://www.python.org/community/awards/psf-distinguished-awards/)はPSFから贈られる最高の賞で、今年は長年Pythonコミュニティで多大な貢献をしてきたThomas Wouters氏、Van Lindberg氏、Ewa Jodlowska氏が受賞していました。
 PSFのExecutive Directorを長年勤めていたEwa氏の受賞の時には、会場からひときわ大きな拍手が送られていました。
 
 ```{figure} images/dsa.jpg
@@ -265,7 +265,7 @@ Distinguish Service Award受賞者（左から2番目がEwa氏）
 ```{figure} images/closing.jpg
 :width: 400
 
-Elane氏によるクロージング
+Elaine氏によるクロージング
 ```
 
 2日目の夜に行われたPyLadiesオークションの寄付金額は、67,000ドル（約980万円）とのことです。
