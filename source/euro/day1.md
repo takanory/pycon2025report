@@ -125,6 +125,10 @@ https://ep2025.europython.eu/session/building-a-large-saas-ai-product-with-pytho
 * お金のヤル取りのトランザクジョンを処理する
 * AI部分はFrask、データ管理はDjango、IntegrationはFastAPI
 
+````{admonition} コラム：EuroPythonトーク
+(whitphxさんに書いて欲しい)
+````
+
 ## Python Quiz
 
 * めちゃめちゃ難しかった
