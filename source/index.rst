@@ -11,4 +11,5 @@ PyCon 2025 report
    :caption: Contents:
 
    us/index
+   euro/index
 
