@@ -1,51 +1,84 @@
-# Day 1
+# カンファレンスDay 1
 
-## Opening
+## オープニング
 
-* はじめてEuroPythonに参加した人を確認。半分くらい?
-* EuroPython Societyが運営しているよ。ブースに来てね
-* オープンスペースとLTが電子化
+カンファレンスのオープニングです。
+カンファレンスのChairからあいさつなどがありました。
+「初めてEuroPythonに参加した人？」という呼びかけには、半分くらいの人が手を上げていたようです。
+多いですね。
+
+```{figure} images/opening.jpg
+:width: 400
+
+オープニング
+```
+
+プログラムチームからはキーノートなどの紹介がありました。
+また、オープンスペースとライトニングトークの申し込みがフォームになったというアナウンスがありました。
+PyCon US同様ここにも電子化の波が！
+
+```{figure} images/keynotes.jpg
+:width: 400
+
+5名のキーノートスピーカー
+```
 
 ## Keynote: Savannah Bailey
 
-* https://ep2025.europython.eu/session/you-dont-have-to-be-a-compiler-engineer-to-work-on-python
+* <https://ep2025.europython.eu/session/you-dont-have-to-be-a-compiler-engineer-to-work-on-python>
 
-はじめてのEuroPython。
-最近結婚したらしい。
+最初のキーノートはSavannah Bailey氏による「You don't have to be a compiler engineer to work on Python」です。
+直訳すると「コンパイラーのエンジニアじゃなくてもPythonに携わることができる」といった感じでしょうか。
 
-2020年
-Language ServerとかをやっていてPythonの動作を学んだ。Pylance?
-チームがtypeshedとかに貢献した
-PdMとして働いていた
+```{figure} images/savannah.jpg
+:width: 400
 
-issueのトリアージが大事だよね
-ドキュメントの更新も大事だよ。typo治したりとか。翻訳したりとか
+Savannah Bailey氏
+```
 
-標準ライブラリへの貢献
-トリアージ、ドキュメントの更新、テストカバレッジを改善
+Savannah氏は2020年頃プロダクトマネージャーとして働いており、自身の所属するチームがLanguage Serverなどをやっており、その頃にPythonの動作を学んだそうです。
+チームとしては[typeshed](https://github.com/python/typeshed)[^typeshed]に貢献していたそうです。
 
-インタープリターの入出力を知らなくてもPythonに貢献できる
-興味があれば学ぶことができる
+[^typeshed]: Pythonの標準ライブラリに対して型アノテーションを追加するためのライブラリ
 
-DevOpsの経験からJITのCI/CDとかビルドについて貢献した
-PEP 771を作成してacceptされた
+Pythonの開発としてはCPythonのインタプリターを開発する作業もありますが、それ以外にも以下のような細かい作業も大事だという話をしていました。
 
-Contribution Tookkit
-GitHub
-PEP
-discuss.python.org
-devguide.python.org
+* issueのトリアージ（重要な課題をとりあげたり、そうでもないものや重複している物を閉じたりする作業）も大事だし、
+* 公式ドキュメントの更新、typoの修正や翻訳など
+* 標準ライブラリへの貢献：issueのトリアージ、ドキュメントの更新、テストカバレッジの改善
 
-## Myths and fairy tales around Python performance
+このように、CPythonのインタープリターがどのような入出力をしてPythonが実行されているかを知らなくても、Pythonに貢献できるということが語られました。
+興味があれば、学びながら貢献ができます。
+実際にSavannah氏もできるところからCPythonへの貢献をはじめたそうです。
 
-* https://ep2025.europython.eu/session/myths-and-fairy-tales-around-python-performance
+Savannah氏の地道な貢献により、氏をCPythonのコア開発者チームのメンバーにする提案が2024年11月に行われ、賛成多数によりコア開発者の一人となりました。
 
-JITコンパイラーが解決する
-互換性を壊さないとPythonは速くできない
+* [Vote to promote Savannah Ostrowski - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-savannah-ostrowski/70302)
+
+また、自身にDevOpsの経験があるため、CPythonのJITありバージョンのCI/CDやビルドについて貢献し、また、PEP 774の作者としてJITのビルドについて提案をしています。
+
+* [PEP 774 – Removing the LLVM requirement for JIT builds | peps.python.org](https://peps.python.org/pep-0774/)
+* [PEP 774: Removing the LLVM requirement for JIT builds - PEPs - Discussions on Python.org](https://discuss.python.org/t/pep-774-removing-the-llvm-requirement-for-jit-builds/78548/25)
+
+また、Savannah氏はPython 3.16と3.17のリリースマネージャーとなるそうです。
+すごい活躍です。
+
+* [Welcome the 3.16 and 3.17 Release Manager: Savannah Bailey! - Core Development - Discussions on Python.org](https://discuss.python.org/t/welcome-the-3-16-and-3-17-release-manager-savannah-bailey/100163)
+
+Savannah Bailey氏からは貢献をはじめるためのツールキットとして、以下が示されました。
+
+* [github.com/python/cpython](https://github.com/python/cpython/)>：Pythonコードが管理されており、issueの確認、PRの提出やリポジトリでコードを参照できる
+* [peps.python.org](https://peps.python.org/)：Pythonの大きな変更を提案、説明するドキュメント
+* [discuss.python.org](https://discuss.python.org/)：機能、ガバナンス（管理方法）、パッケージングやアイデアに関してハイレベルな議論が行われる場所
+* [devguide.python.org](https://devguide.python.org/)：貢献をはじめるための必要な物がある。セットアップ、ツール、トリアージの手順、テストなど
+
+まさに、コンパイラーのエンジニアじゃなくてもCPythonの開発に携わって貢献できるということを、Savannah氏自身が体現していると感じました。
+筆者自身もできるところから貢献することができるかも知れないと感じる、とても印象的なキーノートでした。
 
 ## Exploring the CPython JIT
 
-* https://ep2025.europython.eu/session/exploring-the-cpython-jit
+* <https://ep2025.europython.eu/session/exploring-the-cpython-jit>
+* スピーカー：[Diego Russo](https://ep2025.europython.eu/speaker/diego-russo/)
 * CPythonへの貢献して2年、CPython JITに1年
 * 2025年5月からcore developer
 

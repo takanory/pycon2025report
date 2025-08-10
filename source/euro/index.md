@@ -9,7 +9,7 @@
 
 写真
 
-* <https://www.dropbox.com/scl/fo/7wuclfljkmawl55j5rf2k/AD-jhZOs7qe00wMC0zHlUco?rlkey=v532t6dl87ucn8l6vchlhrp96&e=1&dl=0>
+* <https://www.dropbox.com/scl/fo/7wuclfljkmawl55j5rf2k/AD-jhZOs7qe00wMC0zHlUco?rlkey=v532t6dl87ucn8l6vchlhrp96>
 
 レポート
 
