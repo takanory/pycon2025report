@@ -50,7 +50,7 @@ PYTHON_DISABLE_REMOTE_DEBUG / -X disable-remote-debug
 * https://ep2025.europython.eu/session/building-a-new-tail-calling-interpreter-for-python
 
 * パフォーマンスを見るところでベンチマークを見るとinterpreterが30%と多い
-* interpreterはbutecodeを実行するところ
+* interpreterはbytecodeを実行するところ
 * swtich caseだとジャンプで遅くなる場合がある。今は違う実装になっている。dispatchテーブルを使って飛ぶ
 * The Cake is a lie https://en.wikipedia.org/wiki/The_cake_is_a_lie
 * 多少速くなった
