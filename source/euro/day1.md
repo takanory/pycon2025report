@@ -25,7 +25,8 @@ PyCon US同様ここにも電子化の波が！
 
 ## Keynote: Savannah Bailey
 
-* <https://ep2025.europython.eu/session/you-dont-have-to-be-a-compiler-engineer-to-work-on-python>
+* トーク概要：<https://ep2025.europython.eu/session/you-dont-have-to-be-a-compiler-engineer-to-work-on-python>
+* スライド：<https://github.com/savannahostrowski/europython-2025>
 
 最初のキーノートはSavannah Bailey氏による「You don't have to be a compiler engineer to work on Python」です。
 直訳すると「コンパイラーのエンジニアじゃなくてもPythonに携わることができる」といった感じでしょうか。
@@ -77,27 +78,62 @@ Savannah Bailey氏からは貢献をはじめるためのツールキットと�
 
 ## Exploring the CPython JIT
 
-* <https://ep2025.europython.eu/session/exploring-the-cpython-jit>
+* トーク概要：<https://ep2025.europython.eu/session/exploring-the-cpython-jit>
 * スピーカー：[Diego Russo](https://ep2025.europython.eu/speaker/diego-russo/)
-* CPythonへの貢献して2年、CPython JITに1年
-* 2025年5月からcore developer
+* スライド：<https://github.com/diegorusso/diegorusso/tree/main/2025>
 
-JITとは
+スピーカーのDiego Russo氏はCPythonへの貢献を2年、CPython JITへ1年程貢献し、2025年5月からCPythonのコア開発者となったそうです。
+トークの2カ月前とすごい最近ですね。
 
-3.13ではbuildでオプション
-3.14は実行時のオプション
+* [Vote to promote Diego Russo - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-diego-russo/90492)
 
-JITではμopで最適化されてnativeマシンコードになる
+トークの内容としてはJITコンパイラーとはどういうものか、CPythonのCopy and Patchとはどのように動作するかが説明されました。
+CPyythonのJITはバージョン3.13ではbuildオプションを指定する必要がありますが、3.14では実行時のオプションとなります。
 
-サンプルコードを元に動作を説明
+CPpythonのJITはインタープリターで生成されたSpeializedバイトコードを、μopトレース→最適化されたμopトレース→マシンコードと変換されます。
 
-* バイトコード化
-* バイトコードのスペシャル化
-* tracesで不要な命令を削除?して最適化
+```{figure} images/diego.jpg
+:width: 400
 
-copy and patchの例
+CPython JITでソースコードがどのようにマシンコードに変換されるか
+```
 
-3.15ではJITをスレッドセーフにする。
+ここからは以下のコードがどのようにバイトコード化され、JITで最適化されるかが説明されました。
+また、Copy and Patchがどのようなコードで実装されているかの例も示されました。
+とはいえ、めちゃくちゃ難しくて筆者は雰囲気を掴んだのみです。
+興味のある方はぜひスライドや実際のCPythonのコードを参照してみてください。
+
+```python
+def sum_squares(n):
+	total = 0
+	for i in range(n):
+		total += i * i
+	return total
+```
+
+今後の予定としてPython 3.15のJITでは[スタックの巻き戻しサポート](https://github.com/python/cpython/issues/126910)、[スレッドセーフ化](https://github.com/python/cpython/issues/133171)、パフォーマンス改善を行い、現在より40%高速化することを目標としているそうです。
+
+JITが安定して動作して将来的にCPythonの標準となるのか、楽しみです。
+
+## 会場にレトロゲーム
+
+カンファレンスのロビーにはトロゲーム機が多数展示されていました。
+これはチェコの[RetroHerna](https://retroherna.org/)というプロジェクトの方々が持ち込んだもののようです。
+全てのゲーム機は実際に遊ぶことが可能で、休憩時間などにゲームを楽しんでいる参加者がたくさんいました。
+知っているゲーム機もありますが、まったく聞いたことがないゲーム機もたくさんありました。
+
+```{figure} images/virtual-boy.jpg
+:width: 400
+
+任天堂のバーチャルボーイ
+```
+
+```{figure} images/colecovision.jpg
+:width: 400
+
+ColecoVision
+```
+
 
 ## Uncovering the magic of implementing a new Python syntax feature
 
