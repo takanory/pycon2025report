@@ -99,12 +99,6 @@ copy and patchの例
 
 3.15ではJITをスレッドセーフにする。
 
-## A tour of (some) Python JIT compilers
-
-https://ep2025.europython.eu/session/a-tour-of-some-python-jit-compilers
-
-* GraalPyを作っている人
-
 ## Uncovering the magic of implementing a new Python syntax feature
 
 * https://ep2025.europython.eu/session/uncovering-the-magic-of-implementing-a-new-python-syntax-feature
@@ -149,14 +143,6 @@ https://ep2025.europython.eu/session/a-tour-of-some-python-jit-compilers
 * https://pypi.org/project/pgvector/
 * sentence-transformersもインストール
 * ClosingDistanceで検索できる
-
-## Keynote: Building a large SaaS AI product with Python: The tale of three ecosystems
-
-https://ep2025.europython.eu/session/building-a-large-saas-ai-product-with-python-the-tale-of-three-ecosystems
-
-* Rossumはロボットのこと。チェコ語?
-* お金のヤル取りのトランザクジョンを処理する
-* AI部分はFrask、データ管理はDjango、IntegrationはFastAPI
 
 ````{admonition} コラム：EuroPythonトーク
 
@@ -218,21 +204,70 @@ https://ep2025.europython.eu/session/building-a-large-saas-ai-product-with-pytho
 
 ````
 
-## Python Quiz
+## Pythonクイズ
 
-* めちゃめちゃ難しかった
-* 236位だった...
+1日目のライトニングトークの前にPython Quizがありました。
+これは各参加者がスマートフォンやPCから指定されたサイトにアクセスして、クイズに同時に挑戦するというものです。
+[Mentimeter](https://www.mentimeter.com/)というサービスを使っているようです。
 
-## Lightning Talks
+```{figure} images/quiz1.jpg
+:width: 400
 
-* Lightning Talkのすすめ
-* みんなにしってもらえる。一度に700名に自己紹介できる
+クイズに532名が参加！
+```
 
-* https://github.com/IljaManakov/quack_walk_snake
+素早く回答した方が高得点になるのですが、後半に進むに従ってクイズの内容がめちゃくちゃ難しくなります。
+筆者の結果は236位と全然だめでした...
+ただ、とても楽しかったです。
 
-* SSTVっていう画像を音声で送信する方法?
-* https://en.wikipedia.org/wiki/Slow-scan_television
+## ライトニングトーク
+
+ライトニングは今年からフォームでの申し込みで、午後に採択された人に連絡が来ます。
+筆者も申し込みましたが返事が来ないため落選したようです。
+
+最初のライトニングトーク「Lessons for a Lightning Talk」と題してライトニングトークについて話していました。
+ライトニングトークをすると自分のことを知ってもらえる、一回で700名に対して自己紹介できるのでやるべきだ、という話をしていました。
+私も全く同意です。
+
+```{figure} images/lt1.jpg
+:width: 400
+
+Lessons for a Lightning Talk
+```
 
 ## Pyvo
 
-カオス
+この日の夜は、チェコのローカルコミュニティ主催で[Pyvo](https://ep2025.europython.eu/pyvo/)というカジュアルなパーティーが行われました。
+この名前はチェコ語でビールのことを"Pivo"というのにかけています。
+
+カンファレンス会場から歩いて10分くらいにある、[Na Hradbách](http://www.na-hradbach.cz/)という屋外のビアガーデンに適当に集まってビールを飲みます。
+ただ、別に貸し切りというわけではないので、誰がEuroPython参加者なのかよくわかりません。
+
+```{figure} images/pyvo1.jpg
+:width: 400
+
+Pyvoの会場の様子
+```
+
+[Pyvec](https://pyvec.org/en/)とEuroPythonのサポートによりフードも多少は提供されるのですが、参加人数が多いため私も小さいハンバーガーを1つ確保するのが精一杯でした。
+また、イベントの途中でDjangoのコミュニティからDjango 20周年を記念したケーキの差し入れがありました。
+とてもかわいらしいケーキです。
+
+```{figure} images/django-cake.jpg
+:width: 200
+
+Django 20周年ケーキ
+```
+
+夜も更けると楽器を持ってきた参加者が演奏を始めてみんなで歌っていました。
+なかなかカオスです。
+Pyvo自体は19時くらいから始まっていて、このときは22時半頃です。
+私は全種類のビールを一通り飲んだので会場を後にし、カンファレンス1日目を終えました。
+
+```{figure} images/pyvo.mp4
+:width: 400
+:class: controls
+
+カオスなPyvo
+```
+
