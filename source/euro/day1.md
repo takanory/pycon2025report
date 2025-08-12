@@ -29,7 +29,7 @@ PyCon US同様ここにも電子化の波が！
 * スライド：<https://github.com/savannahostrowski/europython-2025>
 
 最初のキーノートはSavannah Bailey氏による「You don't have to be a compiler engineer to work on Python」です。
-直訳すると「コンパイラーのエンジニアじゃなくてもPythonに携わることができる」といった感じでしょうか。
+直訳すると「コンパイラのエンジニアじゃなくてもPythonに携わることができる」といった感じでしょうか。
 
 ```{figure} images/savannah.jpg
 :width: 400
@@ -68,12 +68,12 @@ Savannah氏の地道な貢献により、氏をCPythonのコア開発者チー�
 
 Savannah Bailey氏からは貢献をはじめるためのツールキットとして、以下が示されました。
 
-* [github.com/python/cpython](https://github.com/python/cpython/)>：Pythonコードが管理されており、issueの確認、PRの提出やリポジトリでコードを参照できる
+* [github.com/python/cpython](https://github.com/python/cpython/)：Pythonコードが管理されており、issueの確認、PRの提出やリポジトリでコードを参照できる
 * [peps.python.org](https://peps.python.org/)：Pythonの大きな変更を提案、説明するドキュメント
 * [discuss.python.org](https://discuss.python.org/)：機能、ガバナンス（管理方法）、パッケージングやアイデアに関してハイレベルな議論が行われる場所
 * [devguide.python.org](https://devguide.python.org/)：貢献をはじめるための必要な物がある。セットアップ、ツール、トリアージの手順、テストなど
 
-まさに、コンパイラーのエンジニアじゃなくてもCPythonの開発に携わって貢献できるということを、Savannah氏自身が体現していると感じました。
+まさに、コンパイラのエンジニアじゃなくてもCPythonの開発に携わって貢献できるということを、Savannah氏自身が体現していると感じました。
 筆者自身もできるところから貢献することができるかも知れないと感じる、とても印象的なキーノートでした。
 
 ## Exploring the CPython JIT
@@ -87,10 +87,10 @@ Savannah Bailey氏からは貢献をはじめるためのツールキットと�
 
 * [Vote to promote Diego Russo - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-diego-russo/90492)
 
-トークの内容としてはJITコンパイラーとはどういうものか、CPythonのCopy and Patchとはどのように動作するかが説明されました。
+トークの内容としてはJITコンパイラとはどういうものか、CPythonのCopy and Patchとはどのように動作するかが説明されました。
 CPyythonのJITはバージョン3.13ではbuildオプションを指定する必要がありますが、3.14では実行時のオプションとなります。
 
-CPpythonのJITはインタープリターで生成されたSpeializedバイトコードを、μopトレース→最適化されたμopトレース→マシンコードと変換されます。
+CPpythonのJITはインタープリターで生成されたSpeializedバイトコードを、μopトレース→最適化されたμopトレース→マシンコードと変換します。
 
 ```{figure} images/diego.jpg
 :width: 400
@@ -117,7 +117,7 @@ JITが安定して動作して将来的にCPythonの標準となるのか、楽�
 
 ## 会場にレトロゲーム
 
-カンファレンスのロビーにはトロゲーム機が多数展示されていました。
+カンファレンスのロビーにはレトロゲーム機が多数展示されていました。
 これはチェコの[RetroHerna](https://retroherna.org/)というプロジェクトの方々が持ち込んだもののようです。
 全てのゲーム機は実際に遊ぶことが可能で、休憩時間などにゲームを楽しんでいる参加者がたくさんいました。
 知っているゲーム機もありますが、まったく聞いたことがないゲーム機もたくさんありました。
@@ -134,51 +134,102 @@ JITが安定して動作して将来的にCPythonの標準となるのか、楽�
 ColecoVision
 ```
 
-
 ## Uncovering the magic of implementing a new Python syntax feature
 
-* https://ep2025.europython.eu/session/uncovering-the-magic-of-implementing-a-new-python-syntax-feature
+* トーク概要：<https://ep2025.europython.eu/session/uncovering-the-magic-of-implementing-a-new-python-syntax-feature>
+* スピーカー：Lysandros Nikolaou
 
-* t-stringの説明、Template型になるよ
-* 最近の新しい言語仕様
-  * t-string
-  * Pattern Matching
-  * Exception Groupほか
-* Tokenizer, Parser, Bytecode compiler, Interpreter
-* Tokenizer: source code -> tokens
-  * t"hello {name}" で6つのトークンになる
-* Parser: tokens -> AST
-  * トークンが正しいフォーマットかの確認の手順を詳細に説明
-  * ASTの構築
-  * 文法の定義にエラーメッセージも書いてあるらしい?
-* Pytecode Compiler: AST->Bytecode
-  * t-stringでBULD_INTERPOLATION, BUILD_TEMPLATEという新しいBytecodeができたのか
-* Interpreter: Bytecodeを実行する
+このトークでは最初にPython 3.14の新しい機能、言語仕様としてt-stringが紹介されました。
+t-stringは`t"hello {value}"`のように宣言すると定義できます。
+t-stringを定義すると、以下のような`Template`オブジェクトが生成されます。
 
-## PyScript as Infrastructure: Running EduBlocks at Scale Without the Cost
+```python
+>>> value = "prague"
+>>> t"hello {value}"
+Template(
+    strings=('hello ', ''),
+    interpolations=(
+        Interpolation('prague', 'value', None, ''),
+    )
+)
+```
 
-* https://ep2025.europython.eu/session/pyscript-as-infrastructure-running-edublocks-at-scale-without-the-cost
-* PythonをBlockベースでプログラミングするツール
-* https://edublocks.org/
-* 2016年に初リリース
-* skulptでPythonをJSで動かす https://skulpt.org/ →Pythonのバージョンが古い
-* 別のアプローチとしてPyScript
-* PyScriptはPyodideとMicroPython上で動く
-* ブロックを組み合わせたら、そこからコードを生成してPyScript上で動作させる(どうやってるんだ??
-* donkeyっていう機能で動作を制御してる? https://docs.pyscript.net/2025.2.1/api/#pyscriptcoredonkey
+また、最近のPythonで追加された言語仕様として以下が紹介されました。
+詳細はリンク先の公式ドキュメントやPEPを参照してください。
 
-## A Pythonic semantic search
+* [t-strings：テンプレート文字列](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-pep750)：`t"{Hello {value}"`と書くとテンプレート文字列が定義できる（3.14）
+* [型引数構文と`type`文](https://docs.python.org/ja/3/whatsnew/3.12.html#pep-695-type-parameter-syntax)：`def max[T](args: Iterable[T]) -> T`のように書いてジェネリック関数が定義できる。`type`文で型エイリアスが作区政できる（3.12）
+* [例外グループと新しい`except*`の構文](https://docs.python.org/ja/3/whatsnew/3.11.html#whatsnew311-pep654)：ExceptionGroupという新しい組み込み型を追加し、`except*`でマッチできる（3.11）
+* [構造的パターンマッチ](https://docs.python.org/ja/3/whatsnew/3.10.html#pep-634-structural-pattern-matching)：`match`文と`case`文でパターンマッチできる。（3.10）
+* [カッコ内のコンテキストマネージャー](https://docs.python.org/ja/3/whatsnew/3.10.html#parenthesized-context-managers)：複数行のコンテキストマネージャーをカッコで囲むことができる（3.10）
 
-* https://ep2025.europython.eu/session/a-pythonic-semantic-search
+```{figure} images/lysandros.jpg
+:width: 400
 
-* https://github.com/wsvincent/django-microframework
-* microDjango https://github.com/pauloxnet/uDjango
-* postgresql使うとSearchVectorとかできるの?
-* VectorFieldってのがあるのか
-* qdrantのvector DBにいれる→DBが更新されたらqdrantに同期
-* https://pypi.org/project/pgvector/
-* sentence-transformersもインストール
-* ClosingDistanceで検索できる
+Lysandros Nikolaou氏
+```
+
+ここからはt-stringを題材に、どのように言語仕様が追加されていくかが解説されました。
+Tokenizer、Parser、Bytecode compiler、Interpreterの4段階で解説していきます。
+
+**Tokenizer**はソースコード（一連の文字列）を受け取り、それを意味のある単位に分解して、トークンとして出力します。
+たとえば先ほどの`t"hello {value}"`は以下の6つのトークンに分解されます。
+Python 3.14のTokenizerではt-stringに対応するため、`t"`を`TSTRING_START`と認識する処理などが追加されたことがわかります。
+
+| トークン[^token] | 内容 |
+| -- | -- |
+| TSTRING_START | `t"` |
+| TSTRING_MIDDLE | `hello ` |
+| LBRACE | `{` |
+| NAME | `value` |
+| RBRACE | `}` |
+| TSTRING_END | `"` |
+
+[^token]: [token --- Python 解析木で使われる定数 — Python 3.14.0rc1 ドキュメント](https://docs.python.org/ja/3.14/library/token.html)
+
+次に**Parser**は一連のトークンを受け取り、Python文法の規則に適合しているかを検証し、AST（Abstract Sytax Tree：抽象構文木）を構築して出力します。
+t-stringの文法仕様は[10. 完全な文法仕様](https://docs.python.org/ja/3.14/reference/grammar.html)から抜粋すると以下の様に書かれています。
+先ほどのトークンが以下の仕様と適合しているかを順番に見ていきます。
+
+```text
+tstring_replacement_field:
+    | '{' annotated_rhs '='? [fstring_conversion] [tstring_full_format_spec] '}' 
+tstring_middle:
+    | tstring_replacement_field
+    | TSTRING_MIDDLE 
+tstring:
+    | TSTRING_START tstring_middle* TSTRING_END 
+```
+
+適合している場合は以下のようなASTを構築します。
+
+```{figure} images/ast.png
+:width: 400
+
+t-stringsのAST
+```
+
+**Bytecode compiler**は受け取ったASTをコンパイルし、Python VMが解釈できるバイトコードを生成します。
+t-stringの例では以下のようなバイトコードが生成され、その後バイトコードの最適化が行われます。
+
+| バイトコード[^bytecode] | 値 |
+| -- | -- |
+| LOAD_CONST | "hello" |
+| LOAD_CONST | "" |
+| BUILD_ TUPLE | 2 |
+| LOAD_NAME | value |
+| LOAD_CONST | "value" |
+| BUILD_INTERPOLATION | 2 |
+| BUILD_TUPLE | 1 |
+| BUILD_TEMPLATE | |
+
+[^bytecode]: [Python バイトコード命令](https://docs.python.org/ja/3.14/library/dis.html#bytecodes)
+
+最後の**Interpreter**では受け取ったバイトコードを評価します。
+その結果として最初のt-stringのコード例にあった`Template(...)`が出力されます。
+
+なんとなく聞いていたCPythonのコードが実行されるまでの流れを、段階を践んで説明してくれたので、とても解像度が上がりました。
+JITの場合は、このバイトコードを生成したあとにJITの処理が入るんだなと、全体的なつながりも見えてきて
 
 ````{admonition} コラム：EuroPythonトーク
 
