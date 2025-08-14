@@ -14,7 +14,7 @@
 ```
 
 プログラムチームからはキーノートなどの紹介がありました。
-また、オープンスペースとライトニングトークの申し込みがフォームになったというアナウンスがありました。
+また、オープンスペースとライトニングトークの申し込みがWebフォームになったというアナウンスがありました。
 PyCon US同様ここにも電子化の波が！
 
 ```{figure} images/keynotes.jpg
@@ -29,7 +29,7 @@ PyCon US同様ここにも電子化の波が！
 * スライド：<https://github.com/savannahostrowski/europython-2025>
 
 最初のキーノートはSavannah Bailey氏による「You don't have to be a compiler engineer to work on Python」です。
-直訳すると「コンパイラのエンジニアじゃなくてもPythonに携わることができる」といった感じでしょうか。
+日本語にすると「コンパイラのエンジニアじゃなくてもPythonに携わることができる」といった感じでしょうか。
 
 ```{figure} images/savannah.jpg
 :width: 400
@@ -37,16 +37,17 @@ PyCon US同様ここにも電子化の波が！
 Savannah Bailey氏
 ```
 
-Savannah氏は2020年頃プロダクトマネージャーとして働いており、自身の所属するチームがLanguage Serverなどをやっており、その頃にPythonの動作を学んだそうです。
-チームとしては[typeshed](https://github.com/python/typeshed)[^typeshed]に貢献していたそうです。
+Savannah氏は2020年頃プロダクトマネージャーとして働いていました。自身の所属するチームがLanguage Serverなどをやっており、その頃にPythonの動作を学んだそうです。
+また、チームとしては[typeshed](https://github.com/python/typeshed)[^typeshed]に貢献していたそうです。
 
 [^typeshed]: Pythonの標準ライブラリに対して型アノテーションを追加するためのライブラリ
 
 Pythonの開発としてはCPythonのインタプリターを開発する作業もありますが、それ以外にも以下のような細かい作業も大事だという話をしていました。
 
-* issueのトリアージ（重要な課題をとりあげたり、そうでもないものや重複している物を閉じたりする作業）も大事だし、
-* 公式ドキュメントの更新、typoの修正や翻訳など
-* 標準ライブラリへの貢献：issueのトリアージ、ドキュメントの更新、テストカバレッジの改善
+* issueのトリアージ：重要な課題をとりあげたり、そうでもない課題や重複している課題を閉じたりする作業
+* 公式ドキュメントの更新：typoの修正や翻訳など
+* テストカバレッジの改善
+* 標準ライブラリへの貢献：Pythonで実装されているものが多く、Cの知識が不要
 
 このように、CPythonのインタープリターがどのような入出力をしてPythonが実行されているかを知らなくても、Pythonに貢献できるということが語られました。
 興味があれば、学びながら貢献ができます。
@@ -56,7 +57,7 @@ Savannah氏の地道な貢献により、氏をCPythonのコア開発者チー�
 
 * [Vote to promote Savannah Ostrowski - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-savannah-ostrowski/70302)
 
-また、自身にDevOpsの経験があるため、CPythonのJITありバージョンのCI/CDやビルドについて貢献し、また、PEP 774の作者としてJITのビルドについて提案をしています。
+また、自身にDevOpsの経験があるため、CPythonのJITありバージョンのCI/CDやビルドについて貢献し、さらに、PEP 774の作者としてJITのビルドについて提案をしています。
 
 * [PEP 774 – Removing the LLVM requirement for JIT builds | peps.python.org](https://peps.python.org/pep-0774/)
 * [PEP 774: Removing the LLVM requirement for JIT builds - PEPs - Discussions on Python.org](https://discuss.python.org/t/pep-774-removing-the-llvm-requirement-for-jit-builds/78548/25)
@@ -68,13 +69,13 @@ Savannah氏の地道な貢献により、氏をCPythonのコア開発者チー�
 
 Savannah Bailey氏からは貢献をはじめるためのツールキットとして、以下が示されました。
 
-* [github.com/python/cpython](https://github.com/python/cpython/)：Pythonコードが管理されており、issueの確認、PRの提出やリポジトリでコードを参照できる
+* [github.com/python/cpython](https://github.com/python/cpython/)：CPythonのリポジトリ、issueの確認、PRの提出、コードの参照ができる
 * [peps.python.org](https://peps.python.org/)：Pythonの大きな変更を提案、説明するドキュメント
 * [discuss.python.org](https://discuss.python.org/)：機能、ガバナンス（管理方法）、パッケージングやアイデアに関してハイレベルな議論が行われる場所
-* [devguide.python.org](https://devguide.python.org/)：貢献をはじめるための必要な物がある。セットアップ、ツール、トリアージの手順、テストなど
+* [devguide.python.org](https://devguide.python.org/)：貢献をはじめるための必要なドキュメント一式。セットアップ、ツール、トリアージの手順、テストなど
 
 まさに、コンパイラのエンジニアじゃなくてもCPythonの開発に携わって貢献できるということを、Savannah氏自身が体現していると感じました。
-筆者自身もできるところから貢献することができるかも知れないと感じる、とても印象的なキーノートでした。
+筆者自身もできるところから貢献をはじめられるかも知れないと感じる、とても印象的なキーノートでした。
 
 ## Exploring the CPython JIT
 
@@ -82,15 +83,16 @@ Savannah Bailey氏からは貢献をはじめるためのツールキットと�
 * スピーカー：[Diego Russo](https://ep2025.europython.eu/speaker/diego-russo/)
 * スライド：<https://github.com/diegorusso/diegorusso/tree/main/2025>
 
-スピーカーのDiego Russo氏はCPythonへの貢献を2年、CPython JITへ1年程貢献し、2025年5月からCPythonのコア開発者となったそうです。
+スピーカーのDiego Russo氏はCPythonへ2年、CPython JITへ1年程貢献し、2025年5月からCPythonのコア開発者となったそうです。
 トークの2カ月前とすごい最近ですね。
 
 * [Vote to promote Diego Russo - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-diego-russo/90492)
 
-トークの内容としてはJITコンパイラとはどういうものか、CPythonのCopy and Patchとはどのように動作するかが説明されました。
-CPyythonのJITはバージョン3.13ではbuildオプションを指定する必要がありますが、3.14では実行時のオプションとなります。
+このトークでは、JITコンパイラとはどういうものか、CPythonのCopy and Patchとはどのように動作するかが説明されました。
+CPythonのJITはバージョン3.13ではbuildオプションを指定する必要がありますが、3.14では実行時のオプションとなります。
 
-CPpythonのJITはインタープリターで生成されたSpeializedバイトコードを、μopトレース→最適化されたμopトレース→マシンコードと変換します。
+
+CPythonのJITはインタープリターで生成されたSpecializedバイトコードを、μop（micro-op）トレース→最適化されたμopトレース→マシンコードと変換します。
 
 ```{figure} images/diego.jpg
 :width: 400
@@ -158,7 +160,7 @@ Template(
 詳細はリンク先の公式ドキュメントやPEPを参照してください。
 
 * [t-strings：テンプレート文字列](https://docs.python.org/ja/3.14/whatsnew/3.14.html#whatsnew314-pep750)：`t"{Hello {value}"`と書くとテンプレート文字列が定義できる（3.14）
-* [型引数構文と`type`文](https://docs.python.org/ja/3/whatsnew/3.12.html#pep-695-type-parameter-syntax)：`def max[T](args: Iterable[T]) -> T`のように書いてジェネリック関数が定義できる。`type`文で型エイリアスが作区政できる（3.12）
+* [型引数構文と`type`文](https://docs.python.org/ja/3/whatsnew/3.12.html#pep-695-type-parameter-syntax)：`def max[T](args: Iterable[T]) -> T`のように書いてジェネリック関数が定義できる。`type`文で型エイリアスが作成できる（3.12）
 * [例外グループと新しい`except*`の構文](https://docs.python.org/ja/3/whatsnew/3.11.html#whatsnew311-pep654)：ExceptionGroupという新しい組み込み型を追加し、`except*`でマッチできる（3.11）
 * [構造的パターンマッチ](https://docs.python.org/ja/3/whatsnew/3.10.html#pep-634-structural-pattern-matching)：`match`文と`case`文でパターンマッチできる。（3.10）
 * [カッコ内のコンテキストマネージャー](https://docs.python.org/ja/3/whatsnew/3.10.html#parenthesized-context-managers)：複数行のコンテキストマネージャーをカッコで囲むことができる（3.10）
@@ -187,8 +189,8 @@ Python 3.14のTokenizerではt-stringに対応するため、`t"`を`TSTRING_STA
 
 [^token]: [token --- Python 解析木で使われる定数 — Python 3.14.0rc1 ドキュメント](https://docs.python.org/ja/3.14/library/token.html)
 
-次に**Parser**は一連のトークンを受け取り、Python文法の規則に適合しているかを検証し、AST（Abstract Sytax Tree：抽象構文木）を構築して出力します。
-t-stringの文法仕様は[10. 完全な文法仕様](https://docs.python.org/ja/3.14/reference/grammar.html)から抜粋すると以下の様に書かれています。
+次に**Parser**は一連のトークンを受け取り、Python文法の規則に適合しているかを検証し、AST（Abstract Syntax Tree：抽象構文木）を構築して出力します。
+t-stringの文法仕様は[10. 完全な文法仕様](https://docs.python.org/ja/3.14/reference/grammar.html)から抜粋すると以下のように書かれています。
 先ほどのトークンが以下の仕様と適合しているかを順番に見ていきます。
 
 ```text
@@ -229,7 +231,7 @@ t-stringの例では以下のようなバイトコードが生成され、その
 その結果として最初のt-stringのコード例にあった`Template(...)`が出力されます。
 
 なんとなく聞いていたCPythonのコードが実行されるまでの流れを、段階を践んで説明してくれたので、とても解像度が上がりました。
-JITの場合は、このバイトコードを生成したあとにJITの処理が入るんだなと、全体的なつながりも見えてきて
+JITの場合は、このバイトコードを生成したあとにJITの処理が入るんだなと、全体的なつながりも見えてる内容でした。
 
 ````{admonition} コラム：EuroPythonトーク
 
@@ -309,10 +311,10 @@ JITの場合は、このバイトコードを生成したあとにJITの処理�
 
 ## ライトニングトーク
 
-ライトニングは今年からフォームでの申し込みで、午後に採択された人に連絡が来ます。
+ライトニングトークは今年からWebフォームからの申し込みで、採択された人には午後に連絡が来ます。
 筆者も申し込みましたが返事が来ないため落選したようです。
 
-最初のライトニングトーク「Lessons for a Lightning Talk」と題してライトニングトークについて話していました。
+最初の発表では「Lessons for a Lightning Talk」と題して、ライトニングトークそのものについて話していました。
 ライトニングトークをすると自分のことを知ってもらえる、一回で700名に対して自己紹介できるのでやるべきだ、という話をしていました。
 私も全く同意です。
 
