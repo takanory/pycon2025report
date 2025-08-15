@@ -42,18 +42,18 @@ Savannah氏は2020年頃プロダクトマネージャーとして働いてい�
 
 [^typeshed]: Pythonの標準ライブラリに対して型アノテーションを追加するためのライブラリ
 
-Pythonの開発としてはCPythonのインタプリターを開発する作業もありますが、それ以外にも以下のような細かい作業も大事だという話をしていました。
+Pythonへの貢献としてはCPythonのインタプリターを開発する作業もありますが、それ以外にも以下のような細かい作業も大事だという話をしていました。
 
 * issueのトリアージ：重要な課題をとりあげたり、そうでもない課題や重複している課題を閉じたりする作業
 * 公式ドキュメントの更新：typoの修正や翻訳など
 * テストカバレッジの改善
 * 標準ライブラリへの貢献：Pythonで実装されているものが多く、Cの知識が不要
 
-このように、CPythonのインタープリターがどのような入出力をしてPythonが実行されているかを知らなくても、Pythonに貢献できるということが語られました。
+このように、CPythonのインタープリターがどのように動作しているかを知らなくても、Pythonに貢献できるということが語られました。
 興味があれば、学びながら貢献ができます。
 実際にSavannah氏もできるところからCPythonへの貢献をはじめたそうです。
 
-Savannah氏の地道な貢献により、氏をCPythonのコア開発者チームのメンバーにする提案が2024年11月に行われ、賛成多数によりコア開発者の一人となりました。
+地道な貢献が評価され、Savannah氏をCPythonのコア開発者チームのメンバーにする提案が2024年11月に行われ、賛成多数によりSavannah氏はコア開発者の一人となりました。
 
 * [Vote to promote Savannah Ostrowski - Committers - Discussions on Python.org](https://discuss.python.org/t/vote-to-promote-savannah-ostrowski/70302)
 
@@ -142,8 +142,8 @@ ColecoVision
 * スピーカー：Lysandros Nikolaou
 
 このトークでは最初にPython 3.14の新しい機能、言語仕様としてt-stringが紹介されました。
-t-stringは`t"hello {value}"`のように宣言すると定義できます。
-t-stringを定義すると、以下のような`Template`オブジェクトが生成されます。
+t-stringは`t"hello {value}"`のように書きます。f-stringと似ていますが、文字列の前に`t`を付けます。
+t-stringを記述すると、以下のような`Template`オブジェクトが生成されます。
 
 ```python
 >>> value = "prague"
