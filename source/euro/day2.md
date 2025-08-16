@@ -1,16 +1,40 @@
-# Day 2
+# カンファレンスDay 2
 
-## Keynote: Brett Cannon: Why it took 4 years to get a lock files spec
 
-* https://opensource.snarky.ca/Talks/2025/EuroPython/Slides
+## Keynote: Brett Cannon
 
-各パッケージのファイル構成について説明
+* トーク概要：<https://ep2025.europython.eu/session/why-it-took-4-years-to-get-a-lock-files-specification>
+* スライド：<https://opensource.snarky.ca/Talks/2025/EuroPython/Slides>
 
-requirements.txt以外にpoetry.lock, pdm.lock, uv.lockがあるのかー
+Brett Cannon氏はPythonのコア開発者の一人で、2019年から2023年までSteering Councilを務めた方です。
+このトークではタイトル「Why it took 4 years to get a lock files spec」の通り、Pythonのロックファイルの仕様をまとめるまでに4年かかった話が語られました。
 
-pylock.tomlという仕様ができた
+```{figure} images/brett.jpg
+:width: 400
 
-https://packaging.python.org/en/latest/specifications/pylock-toml/
+Brett Cannon氏
+```
+
+最初に現在のPythonパッケージを作成するためのファイル構成について説明がありました。
+[pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)、[sdist](https://packaging.python.org/en/latest/specifications/source-distribution-format/)フォーマット、[wheel](https://peps.python.org/pep-0491/)などが紹介されました。
+
+そして、パッケージ間の依存関係の指定にはいろいろな書き方があるため、これを解決することはとても難しいそうです。
+パッケージの依存関係を記述するファイルとして`requirements.txt`、`poetry.lock`、`pdm.lock`、`uv.lock`があり、ツールごとにバラバラという状況です。
+そこで、Pythonのロックファイルを標準化したが、そのためには4年の月日がかかったとのことです。
+標準化された`pylock.toml`ファイルの仕様は以下で確認できます。
+
+* [pylock.toml Specification - Python Packaging User Guide](https://packaging.python.org/en/latest/specifications/pylock-toml/)
+
+ロックファイルは以下のような設計方針で仕様を検討したそうです。
+
+* ソフトウェアで作成し、人間にも読みやすい
+* デフォルトで安全な設定
+* 依存関係の解決をせず素早くインストールできる
+* ロックファイルの生成ツールとインストーラーは異なるツールもありえる
+  * インストーラーはPython製である必要はない
+* 単一と複数環境のそれぞれのシナリオに対応する
+
+そしてpylock.tomlの細かいファイル仕様について説明が行われました。
 
 * pylock.tomlの構造について説明
 * ファイルレベルの説明
