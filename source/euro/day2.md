@@ -135,12 +135,6 @@ PYTHON_DISABLE_REMOTE_DEBUG / -X disable-remote-debug
 * リファレンスカウントの処理を軽量化
 * Faster cyclic garbage collection
 
-## Pydantic, Everywhere, All at Once
-
-https://ep2025.europython.eu/session/pydantic-everywhere-all-at-once
-
-* ベーグルを注文する例で伝える
-
 ## Behind the Scenes: PSF Infrastructure and How You Can Contribute
 
 * https://ep2025.europython.eu/session/behind-the-scenes-psf-infrastructure-and-how-you-can-contribute
@@ -150,7 +144,17 @@ https://ep2025.europython.eu/session/pydantic-everywhere-all-at-once
 
 ## Keynote: Behind the scenes of FastAPI and friends for developers and builders
 
-* https://ep2025.europython.eu/session/behind-the-scenes-of-fastapi-and-friends-for-developers-and-builders
+* トーク概要：<https://ep2025.europython.eu/session/behind-the-scenes-of-fastapi-and-friends-for-developers-and-builders>
+
+カンファレンス2日目夕方のキーノートスピーカーは、FastAPIの作者であるSebastian氏です。
+このキーノートではFastAPIを作成して広めていく過程の中Sebastian氏がどのようなことをしてきたか、という内容が語られました。
+
+```{figure} images/sebastian.jpg
+:width: 400
+
+Sebasitan 氏
+```
+
 * FastAPIの紹介。さまざまなところで使われている。
 * 学校をドロップアウト
 * Couseraとかで勉強した
@@ -162,4 +166,38 @@ https://ep2025.europython.eu/session/pydantic-everywhere-all-at-once
 
 ## Social Event
 
-* いろいろ話した
+この日は[Social Event](https://ep2025.europython.eu/social-event/)です。
+会場は[Střelecký Island](https://www.google.com/maps/place/St%C5%99eleck%C3%BD+Island/@50.0808254,14.4100926,138m/data=!3m1!1e3!4m6!3m5!1s0x470b94fac3cf3515:0x80d309307da30232!8m2!3d50.0812108!4d14.4098907!16s%2Fg%2F1v8kzb1g?hl=en&entry=ttu)という川の中にある島です。
+ちなみに、この島がある川が[ヴルタヴァ川（モルダウ）](https://ja.wikipedia.org/wiki/%E3%83%B4%E3%83%AB%E3%82%BF%E3%83%B4%E3%82%A1%E5%B7%9D)です。
+
+```{figure} images/island.jpg
+:width: 400
+
+Social Event会場の島
+```
+
+```{figure} images/social.jpg
+:width: 400
+
+Social Event会場の入り口
+```
+
+Social Eventでは食事が提供され、ドリンクも最初の1杯は無料です。
+[Bubeneč](https://pivovarbubenec.choiceqr.com/section:napoje/nase-piva)という地元のクラフトビールがお店を出していたので、ここのビールを飲んでいました。
+
+いろんな人と話をしましたが、途中であいにくの雨となり、テントがあるところからあまり動けなくなったのが残念です。
+途中で入り口にもなっている建物の方にも行ったんですが、なぜか台湾と韓国から来たメンバーが3DSでマリオカートで遊んでました。
+なぜここでマリオカートを...
+
+
+他のビールも飲みたいなと思い、会場を後にして[Sibeeria](https://sibeeria.cz/)というクラフトビールの店に行きました。
+この店は日本に海外唯一の支店があり、チェコのクラフトビール情報を仕入れようと事前に訪問していました[^sibeeria]。
+無事チェコのSibeeriaに行くことができたので、個人的は満足です。
+
+```{figure} images/sibeeria.jpg
+:width: 400
+
+チェコのSibeeriaに来たぞ！
+```
+
+[^sibeeria]: <https://x.com/takanory/status/1939867830742393090>
