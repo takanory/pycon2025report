@@ -35,18 +35,62 @@ Brett Cannon氏
 * 単一と複数環境のそれぞれのシナリオに対応する
 
 そしてpylock.tomlの細かいファイル仕様について説明が行われました。
+ファイル名のとおりフォーマットは[TOML](https://toml.io/)形式です。
+ファイルレベルの詳細情報としては以下が必要です。
 
-* pylock.tomlの構造について説明
-* ファイルレベルの説明
+```toml
+lock-version = "1.0"
+environments = ["..."]
+requires-python = "..."
+extras = ["..."]
+dependency-groups = ["..."]
+default-groups = ["..."]
+created-by = "..."
+```
+
+そして`[[packages]]`以下に具体的なパッケージの情報が記述されます。
+詳細は上記のファイル使用を確認してください。
 
 ### なぜ4年かかったのか
 
-* 2019にrequirements.txt v2について 106ポスト
-* 2020に43ポスト
-* 2021 PEP 665 https://peps.python.org/pep-0665/
-* 2022 PEP 665 rejected
-* 2023 54 posts
-* 2024 PEP 751 https://peps.python.org/pep-0751/
+トークの後半ではタイトルの「なぜ仕様の策定に4年かかったのか」の話となります。
+はじまりは4年どころか2019年に遡ります。
+古いWebサイト（おそらくTwitter）でBrett氏がある人の発言に対して「そのロックファイルPythonのオフィシャルではなくツール固有のものなので、安定性はツールの作者に聞いて欲しい」という発言に対して、Tzu-ping Chung氏から「交換可能なロックファイルフォーマットの議論をした方がよさそう」と返し、Brett氏が「そうですね、頭の片隅で考えています」という返答をしていました。
+ちなみに、Tzu-ping氏はPyCon TaiwanのメンバーでEuroPythonにも参加しており、筆者も仲良くさせてもらっています。
+
+```{figure} images/brett-tp.jpg
+:width: 400
+
+ロックファイルについてのやりとり
+```
+
+2019年にrequirements.txt v2についての議論が行われて106ポスト、2020年にも継続して43ポストが投稿されました。
+
+* [Structured, Exchangeable lock file format (requirements.txt 2.0?) - Packaging - Discussions on Python.org](https://discuss.python.org/t/structured-exchangeable-lock-file-format-requirements-txt-2-0/876)
+
+2021年にはPEP 665が提案され、359ポストの議論が行われ、最終的に却下されました。
+
+* [PEP 665 – A file format to list Python dependencies for reproducibility of an application | peps.python.org](https://peps.python.org/pep-0665/)
+* [PEP 665: Specifying Installation Requirements for Python Projects - Packaging - Discussions on Python.org](https://discuss.python.org/t/pep-665-specifying-installation-requirements-for-python-projects/9911)
+* [PEP 665, take 2 -- A file format to list Python dependencies for reproducibility of an application - Packaging - Discussions on Python.org](https://discuss.python.org/t/pep-665-take-2-a-file-format-to-list-python-dependencies-for-reproducibility-of-an-application/11736)
+
+その後2024年にPEP 751が提案され、974ポストの議論が行われました。
+PEP 751は最初の提案から2度の改変を経て、2025年1月に提案したバージョンで承認されました。
+
+* [PEP 751 – A file format to record Python dependencies for installation reproducibility | peps.python.org](https://peps.python.org/pep-0751/)
+* [PEP 751: lock files (again) - Packaging / Standards - Discussions on Python.org](https://discuss.python.org/t/pep-751-lock-files-again/59173)
+* [PEP 751: now with graphs! - Packaging / Standards - Discussions on Python.org](https://discuss.python.org/t/pep-751-now-with-graphs/69721)
+* [PEP 751: one last time - Packaging / Standards - Discussions on Python.org](https://discuss.python.org/t/pep-751-one-last-time/77293)
+
+ここに至るまで4年間で1,800件以上の投稿があったということで、ものすごく大変な作業だったなと感じました。
+こうして作成されたロックファイルの仕様ですが、すでに各種ツールが対応しているそうです。
+
+* メインのロックファイルとして使用：[PDM](https://pdm-project.org/)
+* インストール対応：PDM、[uv](https://docs.astral.sh/uv/)
+* 生成に対応：PDM、uv、[pip](https://pip.pypa.io/en/stable/)
+
+このように長い年月をかけて仕様が策定されたロックファイル（pylock.toml）ですが、すでに各種パッケージング関連のツールも対応しており、今後標準として活用されていくと思われます。
+このようにたくさんの人達の議論の上に仕様が策定されるということで、中心を担ったBrett Cannonさんには本当にお疲れ様と思いました。
 
 ## A new safe external debugger interface for CPython
 
