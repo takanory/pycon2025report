@@ -360,3 +360,14 @@ Pyvo自体は19時くらいから始まっていて、このときは22時半頃
 カオスなPyvo
 ```
 
+```{admonition} 「EuroPython & PHPers Day 2025 参加報告会」のお知らせ
+EuroPython 2025に日本からの参加したメンバー4名と、ポーランドで開催されたPHPers Dayに参加したことみん氏が、それぞれの体験を語る「EuroPython & PHPers Day 2025 参加報告会」というイベントを8月26日（火）に開催します[^report]。
+渋谷の現地会場とオンラインのハイブリッド開催です。
+
+海外イベントってどんな感じなんだろう、自分も挑戦してみたいなど、興味のある方はぜひ以下のページからご参加ください。
+現地参加の方は終了後に懇親会もあるので、交流しましょう。
+
+* [EuroPython & PHPers Day 2025 参加報告会 - connpass](https://pyconjp.connpass.com/event/364753/)
+
+[^report]: [「EuroPython ＆ PHPers Day 2025 参加報告会」8/26に開催 ―海外カンファレンス参加者の体験や学びを共有 | gihyo.jp](https://gihyo.jp/article/2025/08/europython-phpers-day-report-event)
+```
