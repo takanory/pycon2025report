@@ -146,19 +146,29 @@ PYTHON_DISABLE_REMOTE_DEBUG / -X disable-remote-debug
 
 * トーク概要：<https://ep2025.europython.eu/session/behind-the-scenes-of-fastapi-and-friends-for-developers-and-builders>
 
-カンファレンス2日目夕方のキーノートスピーカーは、FastAPIの作者であるSebastian氏です。
-このキーノートではFastAPIを作成して広めていく過程の中Sebastian氏がどのようなことをしてきたか、という内容が語られました。
+カンファレンス2日目夕方のキーノートスピーカーは、FastAPIの作者であるSebastián Ramírez氏です。
+このキーノートでは[FastAPI](https://fastapi.tiangolo.com/ja/)を作成して広めていく過程の中Sebastián氏がどのようなことをしてきたか、という内容が語られました。
+Sebastián氏はEuroPythonに参加することは初めてだそうです。
+トークの冒頭で「今日は話すことがたくさんあるので、Pabloより速くしゃべるよ」と言って会場の笑いをとっていました。
+[Pablo](https://pablogsal.com/)氏は早口だと筆者も思っていましたが、共通認識のようです。
 
 ```{figure} images/sebastian.jpg
 :width: 400
 
-Sebasitan 氏
+Sebastián Ramírez氏
 ```
 
-* FastAPIの紹介。さまざまなところで使われている。
-* 学校をドロップアウト
-* Couseraとかで勉強した
-* 「Solve a problem」
+トークの前半はFastAPI自体の簡単な紹介です。
+Webフレームワークとして非常に多くのGitHubスターを持っており、日々大量にダウンロードされています。
+[Python Developer Survey](https://lp.jetbrains.com/python-developers-survey-2024/#frameworks-and-libraries)の調査でも利用が伸びており、PythonでWeb APIを構築するためのフレームワークとして広く利用されていることがわかります。
+
+次にSebastián氏の過去について振り返ります。
+コロンビア出身のSebastián氏は幼稚園の段階でドロップアウトしたそうです。
+その後は自宅で勉強しながら、コンピューター、ビデオ編集、楽曲制作、グラフィックデザイン、Web開発、親の仕事用のシステム開発をしていたそうです。
+コンピューターにはまり、[cousera](https://www.coursera.org/)、[edX](https://www.edx.org/)、[Udacity](https://www.udacity.com/)のようなオンラインコースで世界中の人と一緒に学んだそうです。
+似たようなプロダクトを0から開発することを繰り返す中で、似たような複雑な処理があることに気づきました。
+このような問題を解決するために、FastAPIなどのプロダクトを開発していると述べました。
+
 * メンテナーじゃなくてユーザーのために最適化する
   * **kwargsはだめ
 * 同じ名前を異なるものにつけない
