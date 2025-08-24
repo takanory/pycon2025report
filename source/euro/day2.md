@@ -1,7 +1,8 @@
 # カンファレンスDay 2
 
+カンファレンス2日目です。
 
-## Keynote: Brett Cannon
+## キーノート：Brett Cannon
 
 * トーク概要：<https://ep2025.europython.eu/session/why-it-took-4-years-to-get-a-lock-files-specification>
 * スライド：<https://opensource.snarky.ca/Talks/2025/EuroPython/Slides>
@@ -94,14 +95,36 @@ PEP 751は最初の提案から2度の改変を経て、2025年1月に提案し�
 
 ## A new safe external debugger interface for CPython
 
-* https://ep2025.europython.eu/session/a-new-safe-external-debugger-interface-for-cpython
-* MRIで検査を受けた?
-* PythonのMRIはこんな感じ(画像)
-* https://peps.python.org/pep-0768/
+* トーク概要：<https://ep2025.europython.eu/session/a-new-safe-external-debugger-interface-for-cpython>
+* スピーカー：Pablo Galindo Salgado氏
 
+本トークではPythonのコア開発者でありSteering CouncilのメンバーでもあるPablo Galindo Salgado氏により、CPython 3.14の新機能である安全な外部デバッガー用のインターフェースについて、どのように作成されたか裏側が紹介されました。
+
+Safe external debuggerはPEP 768で提案され、CPython 3.14から有効になります。
+この機能により、実行中のCPythonに対して安全にアクセスできるデバッグ用のインターフェースが提供されます。
+
+* [PEP 768 – Safe external debugger interface for CPython | peps.python.org](https://peps.python.org/pep-0768/)
+
+あわせてPythonのデバッガーであるPDBに、このインターフェースに接続する機能が追加されました。
+以下のコマンド例のように`-p`オプションでプロセスIDを指定すると、そのプロセスのリモートデバッグができます。
+
+```bash
+python -m pdb -p 1234
 ```
-$ readelf -h python
+
+```{figure} images/pablo.jpg
+:width: 400
+
+Pablo Galindo Salgado氏
 ```
+
+現代は脳の検査をするときにはMRIなどが使用できるが、Pythonの動作しているプログラムを調べるにはこの絵のように外から見ることしかできません（面白い絵ですね）。
+この状況を改善するためにPEP 768が提案され、機能が追加されました。
+
+以降はリモートデバッグがどのように動作するか、内部の動作が詳細に説明されました。
+そしてデモが行われ、動作しているプロセスにデバッガーがアクセスするとそこで処理が止まり、安全に内部の情報を取得できることが確認できました。
+
+CPython 3.14の新機能により、動作しているプログラムのデバッグが便利にできそうで楽しみです。
 
 ## Building a new tail-calling interpreter for Python
 
@@ -142,12 +165,12 @@ PYTHON_DISABLE_REMOTE_DEBUG / -X disable-remote-debug
 * Ee DurbinがDirector of Infrastructure
 * 内部でCabotageってのを使っている? https://github.com/cabotage/cabotage-app
 
-## Keynote: Behind the scenes of FastAPI and friends for developers and builders
+## キーノート：Sebastián Ramírez
 
 * トーク概要：<https://ep2025.europython.eu/session/behind-the-scenes-of-fastapi-and-friends-for-developers-and-builders>
 
 カンファレンス2日目夕方のキーノートスピーカーは、FastAPIの作者であるSebastián Ramírez氏です。
-このキーノートでは[FastAPI](https://fastapi.tiangolo.com/ja/)を作成して広めていく過程の中Sebastián氏がどのようなことをしてきたか、という内容が語られました。
+このキーノートでは「Behind the scenes of FastAPI and friends for developers and builders」と題して、[FastAPI](https://fastapi.tiangolo.com/ja/)を作成して広めていく過程の中Sebastián氏がどのようなことをしてきたか、という内容が語られました。
 Sebastián氏はEuroPythonに参加することは初めてだそうです。
 トークの冒頭で「今日は話すことがたくさんあるので、Pabloより速くしゃべるよ」と言って会場の笑いをとっていました。
 [Pablo](https://pablogsal.com/)氏は早口だと筆者も思っていましたが、共通認識のようです。
@@ -155,7 +178,7 @@ Sebastián氏はEuroPythonに参加することは初めてだそうです。
 ```{figure} images/sebastian.jpg
 :width: 400
 
-Sebastián Ramírez氏
+Sebastián Ramírez氏（スライドのイラストがかわいい）
 ```
 
 トークの前半はFastAPI自体の簡単な紹介です。
@@ -169,12 +192,57 @@ Webフレームワークとして非常に多くのGitHubスターを持って�
 似たようなプロダクトを0から開発することを繰り返す中で、似たような複雑な処理があることに気づきました。
 このような問題を解決するために、FastAPIなどのプロダクトを開発していると述べました。
 
-* メンテナーじゃなくてユーザーのために最適化する
-  * **kwargsはだめ
-* 同じ名前を異なるものにつけない
-* よいドキュメントを書く
+プロダクトを開発するためのTipsとしてたくさんのポイントが示されました。
+「メンテナーではなく、ユーザーのために最適化する」では以下のTipsが紹介されました。
 
-## Social Event
+* ユーザーの視点を持つ
+* まずUXをデザインし、それに合わせて内部を作成する
+* 型ヒントを指定してオートコンプリートに対応する
+* 型ヒントに依存したインラインエラー
+* 明示的な引数にする、`**kwargs`は使わない
+
+「新規いユーザーを捕まえる」ためのTipsは以下です。
+
+* 新鮮な目を持つ
+* 情報の空白になっている箇所を見つける
+* 初心者から意見を取り入れる
+
+「情報の重複を減らす」ためのTipsは以下です。
+
+* コードの重複のことではない
+* 変数や設定の重複を減らす
+* 情報の重複は「キャッシュ」である
+* 重複が必要な情報は近くに配置する
+* 同期されない状態を減らす
+
+「よいドキュメントを書く」では非常にたくさんのTipsが示されました。
+
+* 事前に説明すべきことは何か？
+* コンセプトを表すグラフ
+* すべてを説明する
+* 読み直して書き直して、きれいにする、文章を削る
+* コンセプトの重複を減らす
+* ユーザーが最小限の努力で最大の価値を得られるようにする
+* 空白、画像、絵文字、メモを入れて読みやすくする
+* 用語と概念の一貫性を保つ
+* 用語と概念のスタイルを設定する
+* パワーユーザーにも対応する
+* ドキュメント主導で開発する
+* ドキュメント上でサンプルコードがテストできる
+
+トークの後半では大規模プロジェクトを管理するためのTipsがいくつも示されました。
+ここでは作業量、課題の管理、プルリクエストの処理、レビューの進め方などが説明されました。
+また、大規模プロジェクトの運営は「得るものもあれば、痛みを伴うこともある（Yes gain, yes pain）」とまとめられました。
+最後に「問題を解決しよう（Solve a problem）」と伝えてトークが締めくくられました。
+
+人気があり大規模プロジェクトであるFastAPIの作者であるSebastián氏から示された多数のTipsは、「確かにそれ大事だよな」と思わせる説得力のあるものでした。
+そして、一つ一つは当たり前のことだったりするんですが、その当たり前のことを当たり前にやり続けているであろうSebastián氏とFastAPIチームのすごさを感じました。
+
+なおSebastián氏は[PyCon JP 2025](https://2025.pycon.jp/)にキーノートスピーカーとして来日します。
+本トークのような素晴らしいトークが聞けると思います。
+筆者も日本での最下位を楽しみにしています。
+
+## ソーシャルイベント
 
 この日は[Social Event](https://ep2025.europython.eu/social-event/)です。
 会場は[Střelecký Island](https://www.google.com/maps/place/St%C5%99eleck%C3%BD+Island/@50.0808254,14.4100926,138m/data=!3m1!1e3!4m6!3m5!1s0x470b94fac3cf3515:0x80d309307da30232!8m2!3d50.0812108!4d14.4098907!16s%2Fg%2F1v8kzb1g?hl=en&entry=ttu)という川の中にある島です。
