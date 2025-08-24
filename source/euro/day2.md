@@ -126,44 +126,60 @@ Pablo Galindo Salgado氏
 
 CPython 3.14の新機能により、動作しているプログラムのデバッグが便利にできそうで楽しみです。
 
-## Building a new tail-calling interpreter for Python
-
-* https://ep2025.europython.eu/session/building-a-new-tail-calling-interpreter-for-python
-
-実際に実行しているプロセスにアクセスして処理を止めることができるデモ
-
-PYTHON_DISABLE_REMOTE_DEBUG / -X disable-remote-debug
-
-* Future
-
-## Building a new tail-calling interpreter for Python
-
-* https://ep2025.europython.eu/session/building-a-new-tail-calling-interpreter-for-python
-
-* パフォーマンスを見るところでベンチマークを見るとinterpreterが30%と多い
-* interpreterはbytecodeを実行するところ
-* swtich caseだとジャンプで遅くなる場合がある。今は違う実装になっている。dispatchテーブルを使って飛ぶ
-* The Cake is a lie https://en.wikipedia.org/wiki/The_cake_is_a_lie
-* 多少速くなった
-
 ## Performance improvements in 3.14 and maybe 3.15
 
-* https://ep2025.europython.eu/session/performance-improvements-in-3-14-and-maybe-3-15
-* 高速化に銀の弾丸はない
-* Top-of-stack Caching→3.15で入るっぽい?
-* c = a + bは5回読み込み4回書き込み
-* キャッシュがあると2回読み込み、1回書き込みになる
-* デモを実行して高速化していることを確認
-* Python 3.6以降のデータの持ち方について説明
-* リファレンスカウントの処理を軽量化
-* Faster cyclic garbage collection
+* トーク概要：<https://ep2025.europython.eu/session/performance-improvements-in-3-14-and-maybe-3-15>
+* スピーカー：Mark Shannon氏
 
-## Behind the Scenes: PSF Infrastructure and How You Can Contribute
+Mark Shannon氏はCPythonのコア開発者で、Faster CPythonというPythonを高速化するチームをリードしています。
+今回のトークでは3.14と3.15でのCPythonのパフォーマンス改善について語られました。
 
-* https://ep2025.europython.eu/session/behind-the-scenes-psf-infrastructure-and-how-you-can-contribute
-* 前半はPSFの紹介
-* Ee DurbinがDirector of Infrastructure
-* 内部でCabotageってのを使っている? https://github.com/cabotage/cabotage-app
+```{figure} images/mark.jpg
+:width: 400
+
+Mark Shannon氏
+```
+
+上の画像のスライドにあるように、CPythonの高速化には「銀の弾丸はない」ということが語られていました。
+どういうことかというと、CPythonでどの処理にどれだけの時間を使っているかを調べてみると以下の様になります。
+まんべんなく時間を使っているため、どこか一カ所（例えばインタープリター）を速くしただけではパフォーマンスは大きく改善しないということです。
+
+* インタープリター：20%
+* JIT：9%
+* メモリの割り当てと解除：20%
+* GC：12%
+* lookupとdynamic：15%
+* それ以外：32%
+
+CPython 3.15では「Top-of-stack Caching」という仕組みが入る見込みで、`c = a + b`というコードを例に、スタックの読み込みと書き込みの回数がキャッシュによって減るということが示されました。
+以下の様な単純なコードを例にして実行してみると、Python 3.10では28452ms、Top-of-stack Cachingに対応したPythonでは64msとなっていました
+（ただこれはPython 3.10と比べているので、Python 3.14と比べた場合にパフォーマンスがどこまで改善しているのかが気になりました）。
+
+```python
+import time
+
+def loop(n):
+    t = 0
+    if n < 0:
+        raise ValueError  # Put breakpoint here
+    for i in range(n):
+        t += 1
+    return t
+
+t = time.monotonic_ns()
+loop(10_000_000)
+d = time.monotonic_ns() - t
+print (f"{d/1000_000:.0f} ms")
+```
+
+他にはCPython 3.14では[Incremental garbage collection](https://docs.python.org/ja/3.14/whatsnew/3.14.html#incremental-garbage-collection)が導入され、少しGCが速くなり、一時停止の時間も短くなるとのことです。
+3.15では"Cnadidate rood" garbage collectionが導入されるかもとのことです。
+
+最後にCPythonの継続的なパフォーマンス改善のために資金を提供して欲しいという呼びかけがありました。
+Pythonの運用に多額の費用をかけていて、パフォーマンス向上から利益が得られる会社は、ぜひ話をしにきてほしい、とのことです。
+
+CPythonは継続的にパフォーマンスが改善していますが、そのためにはコア開発者の方々の貢献が必要です。
+資金の援助は重要な問題だなと感じました。
 
 ## キーノート：Sebastián Ramírez
 
