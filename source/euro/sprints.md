@@ -93,3 +93,28 @@ Discordでの主催者からの説明によると、これはランチではな�
 ```
 
 ワルシャワから成田空港に無事到着し、今回のEuroPythonの旅は終わりました。
+
+## 終わりに
+
+EuroPython 2025のレポートは以上です。
+単なる参加のみとなる予定だったカンファレンスですが、最後に滑り込みでライトニングトークをできたことはラッキーでした。
+日本から参加した4名はPyCon US 2025にも参加しており、こんなもの好きが日本に4人もいるんだなと感じました。
+
+筆者が行っているYouTubeライブ[PyCon JP TV](https://tv.pycon.jp/)でもEuroPython 2025について紹介しています。
+寺田さんの写真を中心としたレポートで、異なった目線からの感想もあります。
+ぜひご覧になってください。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WwRQVpYCsGA?si=f_hK1EODPi1TyuXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+オフィシャルの発表動画は、EuroPythonのYouTubeチャンネルで順次公開されています。
+以下のページで確認してください。
+
+* [EuroPython Conference - YouTube](https://www.youtube.com/@EuroPythonConference/videos)
+
+来年のEuroPythonはどこで開催されるのでしょうか。
+
+```{figure} images/with-sebastean.jpg
+:width: 400
+
+Sebastián氏に話しかける筆者
+```
