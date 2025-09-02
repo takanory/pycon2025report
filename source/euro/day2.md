@@ -6,6 +6,7 @@
 
 * トーク概要：<https://ep2025.europython.eu/session/why-it-took-4-years-to-get-a-lock-files-specification>
 * スライド：<https://opensource.snarky.ca/Talks/2025/EuroPython/Slides>
+* ビデオ：[Keynote: Why it took 4 years to get a lock files specification — Brett Cannon - YouTube](https://www.youtube.com/watch?v=MMVVboVL5eU)
 
 Brett Cannon氏はPythonのコア開発者の一人で、2019年から2023年までSteering Councilを務めた方です。
 このトークではタイトル「Why it took 4 years to get a lock files spec」の通り、Pythonのロックファイルの仕様をまとめるまでに4年かかった話が語られました。
@@ -20,7 +21,7 @@ Brett Cannon氏
 [pyproject.toml](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)、[sdist](https://packaging.python.org/en/latest/specifications/source-distribution-format/)フォーマット、[wheel](https://peps.python.org/pep-0491/)などが紹介されました。
 
 そして、パッケージ間の依存関係の指定にはいろいろな書き方があるため、これを解決することはとても難しいそうです。
-パッケージの依存関係を記述するファイルとして`requirements.txt`、`poetry.lock`、`pdm.lock`、`uv.lock`があり、ツールごとにバラバラという状況です。
+パッケージの**すべての**依存関係を記述するファイルとして`requirements.txt`、`poetry.lock`、`pdm.lock`、`uv.lock`があり、ツールごとにバラバラという状況です。
 そこで、Pythonのロックファイルを標準化したが、そのためには4年の月日がかかったとのことです。
 標準化された`pylock.toml`ファイルの仕様は以下で確認できます。
 
@@ -50,13 +51,13 @@ created-by = "..."
 ```
 
 そして`[[packages]]`以下に具体的なパッケージの情報が記述されます。
-詳細は上記のファイル使用を確認してください。
+詳細は上記のファイル仕様を確認してください。
 
 ### なぜ4年かかったのか
 
 トークの後半ではタイトルの「なぜ仕様の策定に4年かかったのか」の話となります。
 はじまりは4年どころか2019年に遡ります。
-古いWebサイト（おそらくTwitter）でBrett氏がある人の発言に対して「そのロックファイルPythonのオフィシャルではなくツール固有のものなので、安定性はツールの作者に聞いて欲しい」という発言に対して、Tzu-ping Chung氏から「交換可能なロックファイルフォーマットの議論をした方がよさそう」と返し、Brett氏が「そうですね、頭の片隅で考えています」という返答をしていました。
+古いWebサイト（おそらくTwitter）でBrett氏がある人の発言に対して「そのロックファイルはPythonのオフィシャルではなくツール固有のものなので、安定性はツールの作者に聞いて欲しい」と返し、それに対してTzu-ping Chung氏から「交換可能なロックファイルフォーマットの議論をした方がよさそう」と返し、Brett氏が「そうですね、頭の片隅で考えています」という返答をしていました。
 ちなみに、Tzu-ping氏はPyCon TaiwanのメンバーでEuroPythonにも参加しており、筆者も仲良くさせてもらっています。
 
 ```{figure} images/brett-tp.jpg
@@ -141,7 +142,7 @@ Mark Shannon氏
 ```
 
 上の画像のスライドにあるように、CPythonの高速化には「銀の弾丸はない」ということが語られていました。
-どういうことかというと、CPythonでどの処理にどれだけの時間を使っているかを調べてみると以下の様になります。
+CPythonでどの処理にどれだけの時間を使っているかを調べてみると以下の様になります。
 まんべんなく時間を使っているため、どこか一カ所（例えばインタープリター）を速くしただけではパフォーマンスは大きく改善しないということです。
 
 * インタープリター：20%
@@ -173,7 +174,7 @@ print (f"{d/1000_000:.0f} ms")
 ```
 
 他にはCPython 3.14では[Incremental garbage collection](https://docs.python.org/ja/3.14/whatsnew/3.14.html#incremental-garbage-collection)が導入され、少しGCが速くなり、一時停止の時間も短くなるとのことです。
-3.15では"Cnadidate rood" garbage collectionが導入されるかもとのことです。
+3.15では"Candidate root" garbage collectionが導入されるかもとのことです。
 
 最後にCPythonの継続的なパフォーマンス改善のために資金を提供して欲しいという呼びかけがありました。
 Pythonの運用に多額の費用をかけていて、パフォーマンス向上から利益が得られる会社は、ぜひ話をしにきてほしい、とのことです。
@@ -200,7 +201,7 @@ PAOのブースは、アジアから参加した、主に日本や台湾のメ�
 ```{figure} images/euro-pao-booth.jpg
 :width: 400
 
-PAOブース
+PAOブース（左が寺田、右はTzu-ping氏）
 ```
 
 初めてのEuroPythonへの参加でしたが、主催者はもちろんのこと参加者も非常にフレンドリーでした。ブースでは丁寧なサポートをしていただいたり、参加者も気さくに声を掛けていただき、大変有意義な時間を過ごせました。
@@ -213,9 +214,10 @@ PAOブース
 ## キーノート：Sebastián Ramírez
 
 * トーク概要：<https://ep2025.europython.eu/session/behind-the-scenes-of-fastapi-and-friends-for-developers-and-builders>
+* ビデオ：[Keynote: Behind the scenes of FastAPI and friends for developers and builders — Sebastián Ramírez - YouTube](https://www.youtube.com/watch?v=mwvmfl8nN_U)
 
 カンファレンス2日目夕方のキーノートスピーカーは、FastAPIの作者であるSebastián Ramírez氏です。
-このキーノートでは「Behind the scenes of FastAPI and friends for developers and builders」と題して、[FastAPI](https://fastapi.tiangolo.com/ja/)を作成して広めていく過程の中Sebastián氏がどのようなことをしてきたか、という内容が語られました。
+このキーノートでは「Behind the scenes of FastAPI and friends for developers and builders」と題して、[FastAPI](https://fastapi.tiangolo.com/ja/)を作成して広めていく過程でSebastián氏がどのようなことをしてきたか、という内容が語られました。
 Sebastián氏はEuroPythonに参加することは初めてだそうです。
 トークの冒頭で「今日は話すことがたくさんあるので、Pabloより速くしゃべるよ」と言って会場の笑いをとっていました。
 [Pablo](https://pablogsal.com/)氏は早口だと筆者も思っていましたが、共通認識のようです。
@@ -246,7 +248,7 @@ Webフレームワークとして非常に多くのGitHubスターを持って�
 * 型ヒントに依存したインラインエラー
 * 明示的な引数にする、`**kwargs`は使わない
 
-「新規いユーザーを捕まえる」ためのTipsは以下です。
+「新しいユーザーを捕まえる」ためのTipsは以下です。
 
 * 新鮮な目を持つ
 * 情報の空白になっている箇所を見つける
@@ -280,12 +282,12 @@ Webフレームワークとして非常に多くのGitHubスターを持って�
 また、大規模プロジェクトの運営は「得るものもあれば、痛みを伴うこともある（Yes gain, yes pain）」とまとめられました。
 最後に「問題を解決しよう（Solve a problem）」と伝えてトークが締めくくられました。
 
-人気があり大規模プロジェクトであるFastAPIの作者であるSebastián氏から示された多数のTipsは、「確かにそれ大事だよな」と思わせる説得力のあるものでした。
+人気があり大規模プロジェクトでもあるFastAPIの作者Sebastián氏から示された多数のTipsは、「確かにそれ大事だよな」と思わせる説得力のあるものでした。
 そして、一つ一つは当たり前のことだったりするんですが、その当たり前のことを当たり前にやり続けているであろうSebastián氏とFastAPIチームのすごさを感じました。
 
 なおSebastián氏は[PyCon JP 2025](https://2025.pycon.jp/)にキーノートスピーカーとして来日します。
 本トークのような素晴らしいトークが聞けると思います。
-筆者も日本での最下位を楽しみにしています。
+筆者も日本での再会を楽しみにしています。
 
 ## ソーシャルイベント
 
