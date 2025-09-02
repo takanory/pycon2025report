@@ -295,3 +295,34 @@ Social Eventでは食事が提供され、ドリンクも最初の1杯は無料�
 ```
 
 [^sibeeria]: <https://x.com/takanory/status/1939867830742393090>
+
+
+
+````{admonition} コラム：EuroPythonとコミュニティブース
+このコラムはPython Asia Organization(PAO)の寺田([@terapyon](https://x.com/terapyon))がお届けします。
+
+EuroPythonには、 [Community Organisers Activities](https://ep2025.europython.eu/community-activities/) として4つの企画がありました。
+
+- Community Organisers Open Space (コミュニティ主催者向けオープンスペース)
+- Community Organisers Lunch (コミュニティ主催者向け専用ランチスペース)
+- Community Booths  (コミュニティ用のブース)
+- PyLadies Open Space & Lunch (PyLadiesオープンスペースとランチ)
+
+私は、PyLadiesに所属してないので、それ以外の3つに参加してきました。
+
+ブースはカンファレンス中の3日間設置できました。企業ブースとは少し離れた場所に設置され、全部で8個のコミュニティーが出展し、コミュニティの説明をしたりステッカーを配布していました。
+私は、PAOとしてこのブースを設置することも一つの目的としてEuroPythonに参加しました。
+PAOのブースは、アジアから参加した、主に日本や台湾のメンバーが担当し、アジア地区のPyConのことを紹介し、アジアからのお菓子を配ったり、寄付を集めました。この活動は2025年5月に開催されたPyCon US 2025のブースと同じようなものです。その時の様子は、[PyCon US 2025カンファレンス開幕まで/1日目レポート](https://gihyo.jp/article/2025/06/pycon-us-2025-01) のPAOブースコラムを御覧ください。
+
+```{figure} images/euro-pao-booth.jpg
+:width: 400
+
+PAOブース
+```
+
+初めてのEuroPythonへの参加でしたが、主催者はもちろんのこと参加者も非常にフレンドリーでした。ブースでは丁寧なサポートをしていただいたり、参加者も気さくに声を掛けていただき、大変有意義な時間を過ごせました。
+
+時間や費用がかかりますが、来年もチャンスがあれば参加したいと思っています。
+
+コミュニティ主催者向けのオープンスペースとコミュニティ主催者向け専用ランチスペースについては、続きのDay 3レポートを参照してください。
+````
