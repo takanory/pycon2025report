@@ -12,4 +12,5 @@ PyCon 2025 report
 
    us/index
    euro/index
+   china/index
 
