@@ -109,6 +109,15 @@ PyCon Chinaに参加するっぽい人がチケットを見せて通っていた
 大きなパネル
 ```
 
+会場で受付を済ませると台湾から参加しているRex氏がいたのであいさつをして立ち話をしました。
+Rex氏はPyCon Taiwan 2025の[Co-Chair](https://tw.pycon.org/2025/en-us/about/staff)です。
+今年はPyCon US 2025でも一緒に参加していました。
+
+「PyCon Taiwanどうでしたー？」「China主催者とのやりとりを私に教えてくれてありがとう」みたいな話をしていると、PyCon ChinaのOrganizerである[Manjusaka氏](https://x.com/Manjusaka_Lee)が「takanoryさんですか？」と声をかけてきました。
+Manjusaka氏とはWeChat（事前のスピーカーの連絡はWeChatです）で事前に少しやりとりしており、名前が印象的なので覚えていました。
+X(Twitter)のプロフィールによると「ゆるキャン△」のスーパーファンらしいです（確かにアイコンがそうだった）。
+台湾の[Wei Lee](https://wei-lee.me/)といい、ゆるキャン△は中華系の方を引きつけるなにかがあるんでしょうか。謎です。
+
 ## 会場
 
 * Rexとあいさつ
