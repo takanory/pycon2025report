@@ -168,14 +168,6 @@ Python for Rustでは[PyO3](https://pyo3.rs/)やruff、uvなどのRust製のツ�
 
 Python for FriendsではおそらくPythonの友達をアイコンと共に紹介していましたが、当然ですがまったくわかりませんでした。
 
-## From Code to Intelligence - Building Next-Generation AI Agents with Open-Source Python Tools
-
-* AWSの人なのか
-* Vibe Coding vs Specification Codingみたいな文脈
-* 最後はKiroが無料で使える用という話だった
-
-* キーノート的なのは最初の人以外はスポンサーからっぽい。AWS、Solana、Elastic
-
 ## 自分の発表：How to learn Japanese with Python
 
 * スライド：<https://slides.takanory.net/slides/20250920pyconcn/>
