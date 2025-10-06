@@ -210,12 +210,22 @@ Python for FriendsではおそらくPythonの友達をアイコンと共に紹�
 
 ## Python 打包和环境管理方案研究
 
-* https://cn.pycon.org/2025/en/talks/python-packaging-and-environment-management-solutions/
-* venv, virtualenv, pyenv, poegry, uv
-* それぞれの使い方を説明
-* envを「エンヴィー」って発音しているのが気になった
-* venvの中の動きを詳細に追いかけながら、確認していく感じ?
+* スライド：[Python_打包和环境管理方案研究.pdf](https://cn.pycon.org/2025/documents/30/PyCon_China_2025_-_Python_%E6%89%93%E5%8C%85%E5%92%8C%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6.pdf)
+* スピーカー：Shell氏
 
+このトークではPythonのパッケージとその配布、また仮想環境についてどのようなツールがあるか、その使い方やツールの動作原理などを解説していました。
+
+```{figure} images/shell.jpg
+:width: 400
+
+Shell氏の発表の様子（ディスプレイが横長で見にくい...）
+```
+
+まず環境を管理するツールとしてvenv、virtualenv、pyenv、poetry、uvがあげられ、それぞれの使い方が示されました。
+トークの後半では自作の仮想環境を作成することによって、仮想環境がどのように動作しているかの詳細な解説が行われました。
+
+仮想環境の構築手順を自作することによって深掘りしていく流れはなかなか興味深かったです。
+英語または日本語で同じトークを聞いてみたいなと思いました。
 
 ```{admonition} コラムタイトル
 ここに卿少納言さんがなにか気になったトークとかがあったら、感想を書いてください。
@@ -223,8 +233,23 @@ Python for FriendsではおそらくPythonの友達をアイコンと共に紹�
 
 ## Lightning Talks
 
-* 全体ではなく他の部屋と並行して行われる
-* けいさんの発表
+[タイムテーブル](https://cn.pycon.org/2025/schedule/)を見るとわかりますが、PyCon Chinaのライトニングトークはメインホールではなく他のセッションと並行して行われます。
+筆者はトークとライトニングトーク両方に申し込んだのですが、両方通ったのでライトニングトークでも発表をしました。
+
+タイトルは「Put 🐱 Cat Emojis in your documents!」で、自作のSphinx拡張[sphinx-nekochan](https://sphinx-nekochan.readthedocs.io/)の紹介です。
+ライトニングトークの制限時間は10分と長いので、少しゆっくりめで、丁寧に説明しました。
+トーク自体は、ネコチャン絵文字のかわいさもあって、興味を持ってもらえたかな？と思っています。
+
+* スライド：<https://slides.takanory.net/slides/20250920pyconcn-lt/>
+
+こちらのスライドも一部に中国語を併記しています。
+中国語のチェックをこの記事でコラムを書いている卿さんにしてもらいました、ありがとうございます。
+
+```{figure} images/takanory-lt.jpg
+:width: 400
+
+筆者のライトニングトークの様子
+```
 
 ```{admonition} コラムタイトル
 ここに卿少納言さんのライトニングトークについて書いてください
@@ -232,8 +257,7 @@ Python for FriendsではおそらくPythonの友達をアイコンと共に紹�
 
 ## クロージングがない
 
-
 ## アフターパーティー
 
-## 中国のインターネット事情
+## 中国のインターネットとアプリ事情
 
