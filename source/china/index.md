@@ -118,23 +118,55 @@ Manjusaka氏とはWeChat（事前のスピーカーの連絡はWeChatです）�
 X(Twitter)のプロフィールによると「ゆるキャン△」のスーパーファンらしいです（確かにアイコンがそうだった）。
 台湾の[Wei Lee](https://wei-lee.me/)といい、ゆるキャン△は中華系の方を引きつけるなにかがあるんでしょうか。謎です。
 
-## 会場
+## オープニング
 
-* Rexとあいさつ
-* sakaさんとあいさつ。来年のJPには行くよみたいな
-* ロシア出身、上海在住の方とか
+時間になったのでメイン会場に入りオープニングに参加します。
+オープニングでは先ほどあいさつしたManjusaka氏があいさつをしていました。
+中国語なので当然何を言っているかはわかりません。
+また、会場を提供している大学の方（と思われる）のあいさつもありました。
 
-## Python for Everything
+```{figure} images/opening.jpg
+:width: 400
 
-* スポンサーがたくさんいるからこのイベントができている
-* 2018年の北京でのPyCon Chinaのこと?
-* Python for RunとしてGeoJSON、データ可視化などを使って、走っている軌跡?を表示
-* Python for Fun、迷路作ったり
-* Python for Life
-* Python for RustでPyO3の紹介、ruff, uvなどの紹介
-  * prekってなんだ? https://pypi.org/project/prek/
-* Python for LLMはまぁたくさんライブラリありますよね
-* Python for Friendsで友達を紹介
+オープニング
+```
+
+## オープンキングトーク：Python for Everything
+
+* スピーカー：伊洪
+* スライド：[PyCon_China_2025-伊洪.pdf](https://cn.pycon.org/2025/documents/27/PyCon_China_2025-%E4%BC%8A%E6%B4%AA.pdf)
+
+オープニング直後のトークは伊洪氏による「Python for Everything」です。
+イベントとしては特に「キーノートです」といった表現はしていませんが、（おそらく）中国のPythonコミュニティに長く関わっている方から、Python全般の話が語られた、キーノート的なトークでした。
+
+```{figure} images/everything.jpg
+:width: 400
+
+伊洪氏
+```
+
+トークは「Python for ◯◯」という形で、Pythonでさまざまなことができる、Pythonは色々なものをもたらしてくれるという話でした。
+
+Python for Goodでは多くのスポンサー、スピーカーによってPyConなどのイベント運営がされていること、Python for Dataでは自身がPandasでデータ分析を行い、Excel、SQLなどさまざまなデータ分析用のツールが揃っていることが紹介されました。
+
+Python for Runでは自身のランニングの記録をするサイト[yihong.run](https://yihong.run/)を紹介しました。GeoJSONのデータを可視化しているそうです。
+
+Python for FunではPython製の面白いプロダクトなどが紹介されました。
+
+* [github.com/marceloprates/prettymaps](https://github.com/marceloprates/prettymaps)：[OpenStreeetMap](https://www.openstreetmap.org/)をベースにカスタマイズした地図を描画
+* [github.com/neozhaoliang/pywonderland](https://github.com/neozhaoliang/pywonderland)：数学を利用してきれいな図形を描画するスクリプト集
+* [Parsing Java Bytecode with Python (JelloVM Ep.01) - YouTube](https://www.youtube.com/watch?v=67FmRyv8jTM)：JavaのバイトコードをPythonで解析する動画
+
+```{figure} images/fun.jpg
+:width: 400
+
+Python for Funの図形描画の例
+```
+
+Python for Lifeでは自らの活動をGitHubの[yihong0618/gitblog](https://github.com/yihong0618/gitblog)で記録していることを紹介していました。
+Python for Rustでは[PyO3](https://pyo3.rs/)やruff、uvなどのRust製のツールを紹介し、Python for LLMではPyTorch、LangChainなどLLMで活用されるライブラリが紹介されました。
+
+Python for FriendsではおそらくPythonの友達をアイコンと共に紹介していましたが、当然ですがまったくわかりませんでした。
 
 ## From Code to Intelligence - Building Next-Generation AI Agents with Open-Source Python Tools
 
@@ -144,14 +176,37 @@ X(Twitter)のプロフィールによると「ゆるキャン△」のスーパ�
 
 * キーノート的なのは最初の人以外はスポンサーからっぽい。AWS、Solana、Elastic
 
-## 自分の発表
+## 自分の発表：How to learn Japanese with Python
 
-* 質問メモ
-* Q: アクセントの情報はとれるか?(日本語)
-* A: SudachiPyでは読みの情報だけ、他のNLPだと発音情報がとれるけど、アクセントはとれないかも。TTSを使うのがよいのではないか。他の発表でAmazon Pollyを使用したTTSについて行っている
-* Q: 日本語初心者。買い増し、みたいな2つの単語が短くなったやつが難しい
-* A: 日本語の先生じゃないので文法については話せないので、次回以降のチャレンジとして問題点を聞いておく。(他の参加者曰く、PhDの研究でやるくらい難しいとのこと)
-* 他の人から、1つめの発表の最後のアプリに興味があるとのこと、スライドを共有した
+* スライド：<https://slides.takanory.net/slides/20250920pyconcn/>
+
+筆者のトークでは「How to learn Japanese with Python」と題して、日本語を勉強している外国の方に対して、Pythonの自然言語処理ライブラリが学習のサポートとして使えますよ、という内容の発表をしました。
+
+発表の様子の写真がなかったので、私の発表をポストしてくれたものを引用します。
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Learn Japanese at <a href="https://twitter.com/hashtag/PyconChina2025?src=hash&amp;ref_src=twsrc%5Etfw">#PyconChina2025</a><br><br>By <a href="https://twitter.com/takanory?ref_src=twsrc%5Etfw">@takanory</a> , Chairman of PyCon JP Association <a href="https://t.co/GgdLyQMH4l">pic.twitter.com/GgdLyQMH4l</a></p>&mdash; ⭐️🌕浅羽星夜🪼🐈 (@AsabaSeiya451) <a href="https://twitter.com/AsabaSeiya451/status/1969276258795086030?ref_src=twsrc%5Etfw">September 20, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+発表内容はPyCon US 2025などで行ったものと同じですが、今回は中国の発表ということで、いくつか追加で工夫をしました。
+
+* タイトル、サブタイトルの一部に中国語を併記
+* 中国語では1つの漢字に対して発音は1つ、日本語は複数の読みがある、という説明を追加
+
+みなさん当然ですが漢字の意味を知っているので、ある漢字や熟語の意味は簡単に推測できます。
+しかし、日本語での読み方を説明すると「マジで？」みたいな反応が多くて、狙い通り日本語の難しいポイントが伝わったかなと思います。
+
+質疑応答でもいくつか質問をしてもらえました。
+最初の質問者は日本語で質問をしていたので、参加者に質問の意味を英語で伝えようと思ったんですが、まてよ？と思って「中国語で質問の意味をみなさんに伝えてもらえますか？」と伝えて、ご自身で2カ国語で話してもらいました。簡単ですね。
+
+以下は質疑応答の内容のメモです。
+
+* 質問：アクセントの情報は取得できますか？
+* 回答：SudachiPyでは読みの情報だけしか取得できない。他のNLPだと発音情報がとれるものもあるが、アクセントまで取得できるかはちょっとわからない。Text to Speech（TTS）を使うと音声データが取得できるので、よいのではないか。私は他でAmazon Pollyを使用したTTSについて発表しているので、三個言うになるかもしれません
+* 質問：日本語の初心者です。「買い増し」のような2つの単語がくっついて短くなった単語が難しいです。どのように勉強すればよいでしょうか
+* 回答：私は日本語のプロや教師ではないので、日本語の文法については説明できません。次回以降のチャレンジとしてこの問題点について認識しておきます。
+
+  * 他の参加者の方が追加で発言してくれて、知り合いはこの問題を博士課程で研究しているとのこと。それくらい難しい問題であるとのことでした
+  
+初めての中国でのトークは、日本語に興味を持っている方がたくさん集まってくれて、質疑応答もできてとても有意義でした。
 
 ## Python 打包和环境管理方案研究
 
