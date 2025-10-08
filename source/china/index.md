@@ -392,3 +392,9 @@ WeChatはチャット画面の中で翻訳が実行できるため、中国語�
 ## おわりに
 
 (TBD)
+
+```{figure} images/group-photo.jpg
+:width: 400
+
+主催者、スピーカー集合写真
+```
