@@ -304,7 +304,7 @@ class User:
 
 PyCon China のメッセージボードに書いた私のコメント：
 
-```{figure} images/pycon-awesome-by-xuetong-qing.jpg
+```{figure} images/pycon-is-awesome-by-kei.jpg
 :width: 400
 
 「PyCon 最高！9/26-9/27 PyCon JP in 広島も遊びに来てね」の意味
