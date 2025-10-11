@@ -265,9 +265,9 @@ class User:
 [こちら](https://www.piglei.com/en/)で、朱雷氏ご自身が英語に翻訳されたブログを読むことができます。中でも [After 14 years in the industry, I still find programming difficult](https://www.piglei.com/articles/en-programming-is-still-hard-after-14-years/) は必見です！
 ````
 
-## Lightning Talks
+## ライトニングトーク
 
-[タイムテーブル](https://cn.pycon.org/2025/schedule/)を見るとわかりますが、PyCon Chinaのライトニングトークはメインホールではなく他のセッションと並行して行われます。
+[タイムテーブル](https://cn.pycon.org/2025/schedule/)を見るとわかりますが、PyCon Chinaのライトニングトーク（LT）はメインホールではなく他のセッションと並行して行われます。
 筆者はトークとライトニングトーク両方に申し込んだのですが、両方通ったのでライトニングトークでも発表をしました。
 
 タイトルは「Put 🐱 Cat Emojis in your documents!」で、自作のSphinx拡張[sphinx-nekochan](https://sphinx-nekochan.readthedocs.io/)の紹介です。
