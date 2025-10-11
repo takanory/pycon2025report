@@ -219,9 +219,51 @@ Shell氏の発表の様子（ディスプレイが横長で見にくい...）
 仮想環境の構築手順を自作することによって深掘りしていく流れはなかなか興味深かったです。
 英語または日本語で同じトークを聞いてみたいなと思いました。
 
-```{admonition} コラムタイトル
-ここに卿少納言さんがなにか気になったトークとかがあったら、感想を書いてください。
+````{admonition} コラム：中国人の Pythonista が勧めるトーク
+こんにちは、卿学童（[ケイ ガクドウ](https://x.com/keishonagon)）と申します。中国出身で大学で日本語を専攻していますが、趣味で Python を独学しています。
+
+今年、初めてオフラインで PyCon China に参加し、同時に PyCon での発表デビューを果たしました。昨年初めて参加した PyCon JP 2024がとても楽しかったので、「来年こそは帰国して PyCon China に参加しよう！」と決意しました。
+
+自分の発表準備があったため、聞けたトークは限られていました。最もお勧めなのは、[朱雷](https://x.com/piglei)氏の「治理依赖关系让 Python 项目架构更整洁：工具与技巧」です。日本語に訳すと「依存関係を整理して、Pythonプロジェクトのアーキテクチャをよりクリーンにする：ツールとテクニック」という意味のタイトルになります。
+
+私にとって最も影響の大きかった中国語の Python 書籍を1冊挙げるなら、必ず朱雷氏の[『Python クラフトマン』](https://github.com/piglei/one-python-craftsman)を選びます。今回の講演は、主にこの書籍の第13章と、彼のブログ記事[『import-linter を利用して Python プロジェクトのアーキテクチャを整理する』](https://www.piglei.com/articles/use-import-linter-to-lint-proj-arch/)を元に、Python プロジェクトにおける依存関係をどう標準化するかについて解説しました。
+
+モジュールの結合・分割やパラメーターの簡素化、遅延実装など、他の言語でも一般的に用いられるテクニックに加え、 `typing.Protocol` を使って依存関係逆転を実現し、完全に疎結合にする手法についても紹介しました。
+
+低レイヤーのモジュールである `users` が、高レイヤーのモジュール `marketing`内の SMS 送信に関連するコードに依存しているケースで説明されました。
+
+```python
+from marketing import SmsSender
+
+class User:
+    """簡単なユーザーオブジェクト"""
+
+    def __init__(self):
+        self.sms_sender = SmsSender()
+
+    def add_notification(self, message: str, send_sms: bool):
+        """ユーザーに新しい通知を送信する"""
+        # ...
+        if send_sms:
+            self.sms_sender.send(message)
 ```
+
+修正されたあとのバージョン：
+
+```python
+from typing import Protocol
+
+class SmsSenderProtocol(Protocol):
+    def send(message: str):
+        ...
+
+class User:
+    def __init__(self, sms_sender: SmsSenderProtocol):
+        self.sms_sender = sms_sender
+```
+
+[こちら](https://www.piglei.com/en/)で、朱雷氏ご自身が英語に翻訳されたブログを読むことができます。中でも [After 14 years in the industry, I still find programming difficult](https://www.piglei.com/articles/en-programming-is-still-hard-after-14-years/) は必見です！
+````
 
 ## Lightning Talks
 
@@ -243,9 +285,36 @@ Shell氏の発表の様子（ディスプレイが横長で見にくい...）
 筆者のライトニングトークの様子
 ```
 
-```{admonition} コラムタイトル
-ここに卿少納言さんのライトニングトークについて書いてください
+````{admonition} コラム：PyCon 初登壇の感想
+卿学童（[ケイ ガクドウ](https://x.com/keishonagon)）です。
+
+当初はトークのプロポーザルを出そうかと思いましたが、これまでの技術プレゼンテーション経験がないことを考慮し、まずはライトニングトークから始めるのが最善だと判断しました。結果的に、これは正しい選択だったと思っています。事前に繰り返し練習したものの、本番では緊張で早口になってしまい、終了後、鈴木さんから冗談で「LTってこういうものなんだな」とコメントをいただきました（笑）。
+
+今回の発表タイトルは「日本語勉強楽しいって思ったこと 一度もない」で、鈴木さんの「How to learn Japanese with Python」と内容が類似しています。Sudachi を使用し、クリックだけで単語が調べられるツールを実装しました。
+
+しかし、実際に使ってみると、「アニメや漫画のテキストに含まれる単語の多くがうまく解析されない」という問題に直面しました。そこで、プレゼンテーションの中心は、未登録語を手動で追加・登録する具体的な方法に置きました。
+
+具体的な操作ステップの解説には、あえてテレビアニメ『BanG Dream! It's MyGO!!!!!』の名台詞「[なんで春日影やったの!?](https://dic.pixiv.net/a/%E3%81%AA%E3%82%93%E3%81%A7%E6%98%A5%E6%97%A5%E5%BD%B1%E3%82%84%E3%81%A3%E3%81%9F%E3%81%AE%21%3F)」を選びました。
+
+このフレーズを選んだ理由は2点あります。
+1. 「なんで」や「春日影」、そして感動詞の「やった」が、現行の SudachiDict に全て未収録で、未登録語のテストケースとして非常に理想的だったからです。
+2. このセリフが中国の若者の間で[ミーム化](https://dic.pixiv.net/a/%E3%81%AA%E3%82%93%E3%81%A7%E6%98%A5%E6%97%A5%E5%BD%B1%E3%82%84%E3%81%A3%E3%81%9F%E3%81%AE%21%3F#h2_2)するなど、絶大な影響力を持っているからです。私が「このフレーズをテストに使うよ」と伝えたところ、会場の多くの聴衆が笑ってくれました。
+
+この発表が中国人の日本語学習に役立つとともに、彼らが PyCon China や PyCon JP に興味を持つきっかけになれば嬉しいです。
+
+PyCon China のメッセージボードに書いた私のコメント：
+
+```{figure} images/pycon-is-awesome-by-kei.jpg
+:width: 400
+
+「PyCon 最高！9/26-9/27 PyCon JP in 広島も遊びに来てね」の意味
 ```
+
+最後に、機会があれば来年の PyCon JP で、MeCab を活用した日本語の古文学習支援ツールの開発について発表したいと思っています。広島での再会を楽しみにしています！
+
+今回の発表資料は[こちら](https://speakerdeck.com/noheartpen/wo-cong-lai-mei-jue-de-ken-sheng-rou-kai-xin-guo-yong-python-da-zao-ri-yu-fan-du-li-qi)です。
+
+````
 
 ## クロージングがない
 
